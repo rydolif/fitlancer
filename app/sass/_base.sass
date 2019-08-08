@@ -1,0 +1,116 @@
+@import "fonts"
+
+
+//----------------------fonts---------------------
+$fonts: 'Roboto', sans-serif
+$title: 'Raleway', sans-serif
+$decor: 'Oswald', sans-serif
+//---------------------end-fonts---------------------
+
+//----------------------color---------------------
+$accent: #c84242
+$text: #fafffd
+$bg: #010101
+
+//---------------------end-color---------------------
+
+body
+	overflow-x: hidden
+	position: relative
+	min-width: 320px
+	font-family: $fonts
+	font-size: 14px
+	color: $text
+	line-height: 1.4
+	font-weight: 400
+
+::selection
+	background-color: $accent
+	color: #fff
+
+a, div, ul, li, input, textarea
+	&:hover,
+	&:focus
+		outline: none
+	
+h1, h2, h3, h4, h5, h6
+	line-height: 1.1
+	margin: 0
+	padding: 0
+	font-weight: 400
+	font-family: $title
+
+ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+i
+	font-style: normal
+	font-size: 16px
+	color: #fff
+
+input, textarea
+	border: #000 1px solid
+	border-radius: 0
+	outline: none
+	box-shadow: none
+	-webkit-appearance: none
+	width: 100%
+	height: 50px
+	
+	&:focus:required:invalid
+		border-color: red
+		outline: none
+		box-shadow: none
+		-webkit-appearance: none
+
+	&:required:valid
+		border-color: green
+		outline: none
+		box-shadow: none
+		-webkit-appearance: none
+
+	&::placeholder
+		color: #000
+
+input
+	height: 50px
+	line-height: 50px
+
+	&::placeholder
+	&::-webkit-input-placeholder /* Chrome/Opera/Safari */
+	&::-moz-placeholder /* Firefox 19+ */
+	&:-ms-input-placeholder /* IE 10+ */
+	&:-moz-placeholder /* Firefox 18- */
+		line-height: 50px
+
+
+textarea
+	&::placeholder
+		line-height: 1.4
+
+b, strong
+	font-weight: 700
+
+p
+	margin: 0
+	padding: 0
+
+a,
+a:focus,
+a:hover,
+button,
+button:focus,
+button:hover,
+	outline: none
+	text-decoration: none
+
+
+
+@import "_base/preloader"
+@import "_base/animation"
+@import "_base/btn"
+@import "_base/form"
+@import "_base/modal"
+@import "_base/hamburger"
