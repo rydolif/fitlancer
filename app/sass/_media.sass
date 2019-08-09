@@ -1,5 +1,12 @@
 
 @media only screen and (max-width : 1440px)
+	.exercises
+		&__btn input
+			width: 37%
+
+		&__item
+			width: 24%
+
 	.container
 		max-width: 1200px
 
@@ -20,6 +27,22 @@
 
 
 @media only screen and (max-width : 1200px)
+	h2
+		margin-bottom: 50px
+
+	.exercises
+		&__btn
+			a
+				padding: 0 15px
+
+			input
+				width: 34%
+		&__item
+			width: 32%
+
+	.trainers__item
+		width: 32%
+
 	.container
 		max-width: 993px
 
@@ -52,6 +75,27 @@
 
 
 @media only screen and (max-width : 992px)
+	h2
+		margin-bottom: 30px
+
+	.exercises
+		&__item
+			&_link
+				font-size: 14px
+
+		&__btn
+			margin-bottom: 30px
+
+			a
+				margin-right: 5px
+				padding: 0 5px
+				font-size: 15px
+
+	.trainers__item
+		width: 47%
+		
+	.container
+		max-width: 767px
 
 	.header
 		z-index: 3
@@ -109,6 +153,27 @@
 
 
 @media only screen and (max-width : 767px)
+	.exercises
+		&__item
+			width: 48%
+			margin-bottom: 15px
+
+		&__btn
+			a
+				margin-bottom: 15px
+				padding: 0 15px
+
+			input
+				width: 70%
+
+	.trainers
+		padding: 40px 0
+		&__item_name
+			padding: 11px
+
+	.container
+		max-width: 576px
+
 	.index h1
 		letter-spacing: 15px
 
@@ -122,7 +187,11 @@
 		&__col
 			width: 48%
 
+
 @media only screen and (max-width : 576px)
+	h2
+		margin-bottom: 20px
+
 	.header__logo img
 		width: 215px
 
@@ -130,7 +199,102 @@
 		&--active
 			top: 75px
 
+	.trainers
+		&__list
+			margin-bottom: 0
+
+		&__pagination
+			a
+				margin: 0 10px
+
+				&:hover,
+				&:focus
+					margin: 0 5px
+
+					&:first-child
+						margin-right: 10px
+
+					&:last-child
+						margin-left: 10px
+
+				&:first-child
+					margin-right: 10px
+
+				&:last-child
+					margin-left: 10px
+
+		&__item
+			&_header
+				padding-left: 10px
+
+			&_bal
+				padding: 10px
+				margin-right: 10px
+				font-size: 18px
+
+			&_name
+				b
+					font-size: 14px
+
+
 @media only screen and (max-width : 480px)
+	.exercises__item
+		width: 100%
+
+	.trainers
+		padding: 30px 0
+
+		h2
+			margin-bottom: 20px
+
+		&__item
+			width: 100%
+			margin-bottom: 15px
+			border-radius: 35px
+
+			&_name
+				padding: 20px
+
+				b
+					font-size: 18px
+
+		&__pagination
+			a
+				margin: 0 5px
+
+				&:hover,
+				&:focus
+					margin: 0 5px
+					width: 10px
+					height: 10px
+
+					&:first-child
+						margin-right: 5px
+
+					&:last-child
+						margin-left: 5px
+						margin-right: 5px
+
+				&:first-child
+					margin-right: 5px
+
+				&:last-child
+					margin-left: 5px
+
+				&:first-child,
+				&:last-child
+					width: 25px
+					height: 25px
+
+					&::before
+						width: 6px
+						height: 6px
+
+			.active
+				margin: 0 5px !important
+				width: 10px
+				height: 10px
+
 	.index
 		h1
 			letter-spacing: 4px
@@ -152,7 +316,11 @@
 			&:last-child
 				margin-bottom: 0
 
+
+
 	.header
+		padding: 5px 0
+
 		&__logo img
 			width: 145px
 
@@ -161,6 +329,10 @@
 
 			img
 				display: none
+
+	.nav
+		&--active
+			top: 45px
 
 	.footer
 		&__container
@@ -172,5 +344,8 @@
 		
 		&__soc
 			justify-content: center
-
-
+	
+	.btn
+		height: 35px
+		line-height: 35px
+		font-size: 16px

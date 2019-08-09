@@ -1,0 +1,198 @@
+.trainers
+	padding: 60px 0 90px
+
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+		margin-bottom: 70px
+
+
+	&__item
+		position: relative
+		overflow: hidden
+		margin-bottom: 35px
+		border-radius: 30px
+		width: 23.5%
+
+		&:hover,
+		&:focus
+			.trainers__item_footer
+				transform: scale(1)
+				display: block
+				padding: 15px 75px 15px 15px
+				margin-top: 10px
+				
+				ul, div
+					display: block
+
+				li
+					margin-bottom: 15px
+					font-size: 12px
+				
+					&:last-child
+						margin-bottom: 0
+
+		div, span, b, ul, li
+			transition: all .6s
+
+		img
+			width: 100%
+			height: auto
+
+		&_online
+			position: absolute
+			top: 20px
+			right: 20px
+			background-color: #00a651
+			border-radius: 20px
+			font-size: 16px
+			line-height: 1.8
+			padding: 0 10px
+			color: $text
+
+		&_content
+			position: absolute
+			bottom: 0
+			left: 0
+			right: 0
+			z-index: 1
+			color: $text
+			line-height: 1
+
+		&_header
+			padding-left: 15px
+			display: flex
+			justify-content: space-between
+			align-items: center
+
+		&_bal
+			background-color: rgba(#404040, .75)
+			padding: 15px
+			border-radius: 25px
+			margin-right: 15px
+			font-size: 24px
+			font-family: $title
+
+		&_name
+			background-color: rgba($accent, .75)
+			padding: 20px 15px
+			border-radius: 25px
+			text-align: right
+			width: 100%
+
+			b, span
+				display: block
+
+			b
+				margin-bottom: 5px
+				font-size: 18px
+				font-family: $title
+
+		&_footer
+			background-color: rgba(#404040, .75)
+			border-radius: 25px
+			transform: scale(0)
+			
+			ul, div
+				display: none
+
+			li
+				font-size: 0
+
+				&::before
+					content: '▶'
+					float: left
+					top: 5px
+					padding-top: 2px
+					padding-right: 3px
+					font-size: 7px
+
+
+		&_priz
+			padding: 15px
+			position: absolute
+			right: 0
+			top: 0
+			background-color: rgba(#404040, .75)
+			border-radius: 25px
+	
+
+	&__pagination
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		height: 35px
+
+		a
+			display: block
+			margin: 0 15px
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			background-color: #8f8f8f
+			transition: all .6s
+			cursor: pointer
+
+			&:hover,
+			&:focus
+				background-color: $text
+				width: 20px
+				height: 20px
+				margin: 0 10px
+
+			&:first-child,
+			&:last-child
+				position: relative
+				background-color: transparent
+				border: 2px solid $text
+				width: 35px
+				height: 35px
+
+				&:hover,
+				&:focus
+					margin: 0 15px
+					background-color: $text
+
+					&::before
+						border-top: 2px solid #242424
+						border-left: 2px solid #242424
+
+
+				&::before
+					content: ''
+					position: absolute
+					top: 50%
+					left: 50%
+					display: block
+					width: 10px
+					height: 10px
+					border-top: 2px solid $text
+					border-left: 2px solid $text
+					transition: all .6s
+
+			&:first-child
+				margin-right: 80px
+
+				&:hover,
+				&:focus
+					margin-right: 80px
+
+				&::before
+					transform: translate(-30%, -50%)rotate(-45deg)
+
+			&:last-child
+				margin-left: 80px
+
+				&:hover,
+				&:focus
+					margin-left: 80px
+
+				&::before
+					transform: translate(-70%, -50%) rotate(135deg)
+
+		.active
+			background-color: #fff
+			width: 20px
+			height: 20px
+			margin: 0 15px !important

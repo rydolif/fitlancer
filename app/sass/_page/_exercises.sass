@@ -1,0 +1,135 @@
+.exercises
+
+	div, span, a, b, img, p
+		transition: all .6s
+
+	&__btn
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+		margin-bottom: 65px
+
+		input
+			width: 48%
+			border-radius: 25px
+			background-color: #313131
+			background-image: url(../img/search.png)
+			background-repeat: no-repeat
+			background-position: 95% center
+			border-color: transparent
+			padding: 0 25px
+			color: $text
+			transition: all .6s
+
+			&::placeholder
+				color: rgba(#fff, .15)
+
+			&:hover,
+			&:focus
+				border-color: rgba(#fff, 15)
+
+
+		a
+			margin-right: 25px
+			padding: 0 40px
+
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+
+	&__item
+		overflow: hidden
+		position: relative
+		width: 18.5%
+		border-radius: 30px
+		border: 2px solid transparent
+		z-index: 1
+		margin-bottom: 25px
+
+		&:hover,
+		&:focus
+			border: 2px solid $accent
+			
+			p
+				background-color: rgba(#fff, .6)
+				color: #010101
+
+			.exercises__item_arrow
+				background-color: rgba(#fff, .6)
+
+				span
+					border-color: #010101
+					&::before
+						border-color: #010101
+
+			.exercises__item_link
+				right: 7px
+
+				p
+					margin-right: 5px
+					padding: 22px 10px
+					font-weight: 700
+
+		img
+			width: 100%
+			height: auto
+
+
+		&_link
+			position: absolute
+			bottom: 7px
+			right: -65px
+			padding-left: 7px
+			z-index: 1
+			text-transform: uppercase
+			color: $text
+			line-height: 1
+			font-size: 16px
+			transition: all .6s
+			display: flex
+			align-items: center
+
+			p
+				background-color: rgba(#111, .75)
+				padding: 22px
+				line-height: 1
+				border-radius: 25px
+				transition: all .6s
+				margin-right: 15px
+
+		&_arrow
+			display: block
+			padding: 22px
+			background-color: rgba(#111, .75)
+			padding: 20px
+			border-radius: 25px
+			transition: all .6s
+
+			span
+				position: relative
+				display: block
+				width: 22px
+				height: 22px
+				border: 2px solid #fff
+				border-radius: 50%
+				transition: all .6s
+
+				&::before
+					content: ''
+					position: absolute
+					left: 50%
+					top: 50%
+					transform: translate(-70%, -50%) rotate(135deg)
+					width: 9px
+					height: 9px
+					border-top: 1.3px solid #fff
+					border-left: 1.3px solid #fff
+					transition: all .6s
+
+		
+
+
+
+
+
