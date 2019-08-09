@@ -1,59 +1,176 @@
 
+@media only screen and (max-width : 1440px)
+	.container
+		max-width: 1200px
+
+	.header__logo
+		img
+			width: 300px
+
+	.nav
+		width: 40%
+		li
+			margin-right: 20px
+
+	.footer
+		padding: 20px 0
+
+		.btn
+			padding: 0 35px
+
+
 @media only screen and (max-width : 1200px)
+	.container
+		max-width: 993px
+
+	.nav
+		a
+			font-size: 16px
 
 	.header
+		&__logo,
+		&__nav,
+		&__btn
+			width: auto
+
+	.btn
+		padding: 0 35px
+	
+	.index h1
+		line-height: 1.4
+
+	.footer
+		&__col
+			width: 32%
+			margin-bottom: 20px
+
+			&:first-child
+				order: 6
+
+		&__container
+			flex-wrap: wrap
 
 
 @media only screen and (max-width : 992px)
 
+	.header
+		z-index: 3
+
+		&__container
+			padding-left: 70px
+
 	.nav
 		position: fixed
+		top: -100%
+		left: 0
+		right: 0
 		display: block
-		width: 320px
-		height: 100%
+		width: 100vw
+		height: 100vh
 		flex-direction: column
-		right: -100%
-		top: 80px
-		z-index: -1
-		background: rgba(0, 0, 0, .9)
-		transition: all .3s
+		z-index: 100
+		background: rgba($bg, .95)
+		transition: all .6s
 
 		ul
 			display: flex
 			flex-direction: column
 			justify-content: center
-			margin-top: 40px
-			margin-left: 40px
+			margin: 40px
 
 		li
 			margin: 0
-			margin-bottom: 10px
+			margin-bottom: 25px
+			text-align: center
 
 		a
 			color: #fff
+			font-size: 22px
 		
 		&--active
-			right: 0
+			top: 79px
 
 	.hamburger
 		display: block
 
+	.main
+		&__before
+			display: none
+
+	.index__item
+		img
+			width: 100%
+
+		p
+			padding: 10px
+
+		span
+			font-size: 16px
 
 
 @media only screen and (max-width : 767px)
-	.header
+	.index h1
+		letter-spacing: 15px
+
+	.footer
+		h3
+			margin-bottom: 10px
+
+		&__soc
+			margin-bottom: 10px
+
+		&__col
+			width: 48%
 
 @media only screen and (max-width : 576px)
-	.header
+	.header__logo img
+		width: 215px
+
+	.nav
+		&--active
+			top: 75px
 
 @media only screen and (max-width : 480px)
+	.index
+		h1
+			letter-spacing: 4px
+			font-size: 28px
+			margin-bottom: 40px
+
+		&__list
+			flex-wrap: wrap
+
+		&__item
+			width: 100%
+			margin-right: 0
+			margin-bottom: 20px
+
+			&:hover,
+			&:focus
+				transform: translate(0, -15px)
+
+			&:last-child
+				margin-bottom: 0
+
 	.header
+		&__logo img
+			width: 145px
 
+		.btn
+			padding: 0 15px
 
+			img
+				display: none
 
+	.footer
+		&__container
+			text-align: center
 
-
-
-
+		&__col
+			width: 100%
+			align-items: center
+		
+		&__soc
+			justify-content: center
 
 

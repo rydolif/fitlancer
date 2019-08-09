@@ -1,6 +1,12 @@
 @import "libs"
 @import "base"
 
+
+.body
+	&--menu
+		overflow: hidden
+
+
 .container
 	max-width: 1440px
 	padding: 0 15px
@@ -8,23 +14,20 @@
 
 
 .header
-	position: absolute
-	top: 0
-	right: 0
-	left: 0
 	padding: 15px 0 10px
 	transition: all .6s
 	background: #010101
 	z-index: 1
 
+
 	&--active, &--menu
-		
 
 	&__container
 		position: relative
 		display: flex
 		justify-content: space-between
 		align-items: center
+		z-index: 2
 
 	&__logo,
 	&__nav,
@@ -68,27 +71,11 @@
 .main
 	position: relative
 	overflow: hidden
-	padding: 250px 0 230px
 	display: flex
 	flex-direction: column
 	justify-content: space-between
-	background: linear-gradient(to left, rgba(19,11,11,1) 0%, rgba(54,55,55,1) 100%)
+	background: linear-gradient(45deg, rgba(54,55,55,1) 0%, rgba(4,10,10,1) 100%)
 	min-height: 100vh
-	z-index: 1
-
-	&::before
-		content: ''
-		position: absolute
-		left: 0
-		right: 0
-		bottom: 50px
-		background-image: url(../img/main--bg.png)
-		background-size: cover
-		background-repeat: no-repeat
-		background-position: center
-		width: 100%
-		height: 100%
-		z-index: 2
 	
 	&::after
 		content: 'Workout'
@@ -96,16 +83,27 @@
 		left: 65%
 		top: 30%
 		transform: translate(-50%, -50%)
-		z-index: 1
 		font-family: $decor
 		color: #3b3d3d
 		font-size: 485px
 		line-height: 1
 		font-weight: 600
+		z-index: 0
+
+
+	&__before
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		top: 0
+		min-height: 100vh
+		z-index: 1
 
 
 .index
 	z-index: 2
+	padding: 50px 0
 
 	h1
 		text-transform: uppercase
@@ -149,18 +147,14 @@
 			align-items: center
 			background: rgba($bg, .65)
 			padding: 28px
+			text-align: center
 
 		span
 			color: #fff
 			font-size: 20px
 
 
-
 .footer
-	position: absolute
-	right: 0
-	left: 0
-	bottom: 0
 	padding: 40px
 	background: #010101
 	z-index: 3
@@ -171,7 +165,52 @@
 		justify-content: space-between
 		align-items: center
 
+	&__col
+		width: 19%
+
+	&__soc
+		display: flex
+		align-items: center
+		margin-bottom: 15px
+
+		a
+			margin-right: 30px
+
+
+	h3
+		text-transform: uppercase
+		font-size: 16px
+		font-weight: 200
+		margin-bottom: 20px
+		
+	a
+		color: $text
+		img
+			animation: hover-back .6s linear 1 forwards
+
+
+		&:hover,
+		&:focus
+			color: $accent
+
+			img
+				animation: hover .6s linear 1 forwards
+
+	p
+		font-size: 18px
+
+		a
+			font-size: 14px
 	
+	li
+		margin-bottom: 5px
+
+		&:last-child
+			margin-bottom: 0
+
+
+
+
 
 @import "page"
 @import "media" // Always at the end
