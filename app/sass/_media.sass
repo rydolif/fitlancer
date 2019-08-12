@@ -123,23 +123,36 @@
 
 
 @media only screen and (max-width : 992px)
-	.profile--my
-		&__left
-			&_img
+	.profile
+		&--my
+			&__left
+				&_img
+					span
+						font-size: 14px
+						top: 10px
+						right: 10px
+						padding: 3px 5px
+			&__right_col
+				width: 48%
+
+				li,
 				span
 					font-size: 14px
-					top: 10px
-					right: 10px
-					padding: 3px 5px
-		&__right_col
-			width: 48%
 
-			li,
-			span
-				font-size: 14px
+				.btn
+					padding: 0 13px
 
-			.btn
-				padding: 0 13px
+		&--edit
+			&__right
+				width: 58%
+
+				&_col
+					width: 100%
+
+			&__left
+				width: 40%
+
+
 
 	.admin
 		&--table
@@ -352,6 +365,10 @@
 
 
 @media only screen and (max-width : 576px)
+	.profile--my__left_img .btn
+		font-size: 14px
+		width: 160px
+
 	.admin
 		&__title
 			margin-bottom: 20px

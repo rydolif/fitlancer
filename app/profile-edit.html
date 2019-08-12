@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Мой профиль</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" href="img/favicon.ico">
+	<meta name="theme-color" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css?v=1">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:600&display=swap&subset=cyrillic" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="header__container container">
+
+			<button class="hamburger" type="button">
+				<span class="hamburger__item"></span>
+			</button>
+
+			<nav class="header__nav nav">
+				<ul>
+					<li><a href="about.html">О нас</a></li>
+					<li><a href="partners.html">Наши тренеры</a></li>
+					<li><a href="list.html">Список упражнений</a></li>
+				</ul>
+			</nav>
+
+			<a href="index.html" class="header__logo">
+				<img src="img/logo.png" alt="logo">
+			</a>
+
+			<div class="header__btn">
+				<a href="#" class="btn"><img src="img/login.png" alt="">Вход</a>
+			</div>
+
+		</div>
+	</header>
+
+	<section class="exercises">
+		<div class="container">
+
+			<div class="title">
+				<a href="#" class="title__link"><span></span>вернутся к профилю</a>
+				<div>
+					<a href="#" class="btn">Сообщения</a>
+					<a href="#" class="btn">Мои программы</a>
+				</div>
+			</div>
+
+			<form class="profile--edit profile--my">
+
+				<div class="profile--edit__left profile--my__left">
+					<div class="profile--my__left_img">
+						<img src="img/avatar.jpg" alt="">
+						<span>Online</span>
+						<div class="">
+							<a href="#" class="btn">Выберите файл</a>
+							<a href="#" class="btn">Загрузить</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="profile--edit__right profile--my__right">
+					<div class="profile--edit__right_col profile--my__right_col">
+						<ul>
+							<li>
+								<span>Имя <b>*</b></span>
+								<input type="text" placeholder="Имя" required>
+							</li>
+							<li>
+								<span>Фамилия <b>*</b></span>
+								<input type="text" placeholder="Фамилия" required>
+							</li>
+							<li>
+								<span>Возраст <b>*</b></span>
+								<p>
+									<input type="number" placeholder="18" required>
+									<span>лет</span>
+								</p>
+							</li>
+							<li>
+								<span>Рост <b>*</b></span>
+								<p>
+									<input type="number" placeholder="180" required>
+									<span>см</span>
+								</p>
+							</li>
+							<li>
+								<span>Вес <b>*</b></span>
+								<p>
+									<input type="number" placeholder="70" required>
+									<span>кг</span>
+								</p>
+							</li>
+							<li>
+								<span>Тренировочный стаж <b>*</b></span>
+								<p>
+									<input type="number" placeholder="2" required>
+									<span>лет</span>
+								</p>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="profile--edit__right_col profile--my__right_col">
+						<textarea name="" id="" placeholder="Резюме"></textarea>
+					</div>
+				</div>
+
+				<div class="profile--edit__btn">
+					<a href="#" class="btn">Сохранить</a>
+				</div>
+
+			</form>
+
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__container container">
+
+			<div class="footer__col">
+				<p>© Fitlancer, 2019, </p>
+				<p><a href="#">все права защищены</a></p>
+			</div>
+
+			<div class="footer__col">
+				<h3>O Fitlancer</h3>
+				<ul>
+					<li><a href="#">О проекте</a></li>
+					<li><a href="#">Пользовательское соглашение</a></li>
+					<li><a href="#">Политика конфиденциальности</a></li>
+				</ul>
+			</div>
+
+			<div class="footer__col">
+				<h3>Меню</h3>
+				<ul>
+					<li><a href="about.html">О нас</a></li>
+					<li><a href="partners.html">Наши тренеры</a></li>
+					<li><a href="list.html">Список упражнений</a></li>
+				</ul>
+			</div>
+
+			<div class="footer__col">
+				<h3>Связь с нами</h3>
+				<div class="footer__soc">
+					<a href="#" target="_blank"><img src="img/footer--in.png" alt=""></a>
+					<a href="#" target="_blank"><img src="img/footer--tg.png" alt=""></a>
+					<a href="#" target="_blank"><img src="img/footer--vk.png" alt=""></a>
+				</div>
+				<a href="mailto:fitlancer@gmail.com">fitlancer@gmail.com</a>
+			</div>
+
+			<div class="footer__col">
+				<a href="#" class="btn">Обратная связь</a>
+			</div>
+
+		</div>
+	</footer>
+
+	<script src="js/scripts.min.js"></script>
+
+
+</body>
+</html>

@@ -23,6 +23,35 @@
 					font-weight: 700
 					font-size: 16px
 
+				div
+					position: absolute
+					bottom: 0
+					right: 0
+					left: 0
+					width: 100%
+					display: flex
+					flex-direction: column
+					align-items: center
+					border-radius: 25px
+					background-color: rgba(#0c0c0c, .60)
+					padding: 20px
+
+				.btn
+					height: 45px
+					line-height: 45px
+					border-color: transparent
+					background-color: rgba(#fff, .33)
+					margin-bottom: 10px
+					width: 200px
+					padding: 0 10px
+
+					&:hover,
+					&:focus
+						background-color: $accent
+
+					&:last-child
+						margin-bottom: 0
+
 			img
 				width: 100%
 				border-radius: 25px
@@ -66,7 +95,39 @@
 				width: 45%
 
 
+	&--edit
+		li
+			align-items: center
+			margin-bottom: 25px
 
+			span
+				width: 42%
+
+				b
+					color: $accent
+
+			input
+				width: 56%
+				padding: 0 25px
+
+			p
+				width: 56%
+				display: flex
+				align-items: center
+
+				span
+					display: block
+					text-align: center
+
+		&__right
+			&_col
+				width: 48%
+
+		&__btn
+			display: flex
+			justify-content: flex-end
+			width: 100%
+			margin-top: 15px
 
 
 

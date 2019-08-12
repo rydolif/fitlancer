@@ -81,8 +81,6 @@ h2
 			border-left: 1.3px solid #fff
 			transition: all .6s
 
-		
-
 ul
 	margin: 0
 	padding: 0
@@ -137,8 +135,33 @@ input
 	&:-moz-placeholder /* Firefox 18- */
 		line-height: 50px
 
+input[type="number"]
+	text-align: center
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+input[type="number"]
+  -moz-appearance: textfield
+
+input[type="number"]:hover,
+input[type="number"]:focus
+  -moz-appearance: number-input
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+  -webkit-appearance: none
+  margin: 0
 
 textarea
+	height: 85%
+	min-height: 200px
+	resize: none
+	padding: 20px 25px
+
 	&::placeholder
 		line-height: 1.4
 
