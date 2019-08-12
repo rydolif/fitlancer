@@ -149,6 +149,9 @@
 		display: block
 
 	.main
+		&::after
+			font-size: 385px
+
 		&__before
 			display: none
 
@@ -276,8 +279,52 @@
 				b
 					font-size: 14px
 
+	.main
+		&::after
+			font-size: 285px
+
 
 @media only screen and (max-width : 480px)
+	.login
+
+		&__container
+			margin: 40px 15px
+			width: auto
+			max-width: 100%
+			
+		&__header
+			padding: 20px 20px 0
+
+			a
+				font-size: 18px
+				padding-bottom: 15px
+
+		&__form
+			padding: 20px
+
+			&_line
+				margin-bottom: 15px
+
+				&--two input
+					width: 100%
+					margin-bottom: 15px
+
+			&_check
+				margin-bottom: 15px
+
+				label,
+				a
+					font-size: 14px
+
+			&_menthor
+				justify-content: center
+				flex-wrap: wrap
+				margin-bottom: 15px
+
+			input
+				padding: 0 15px
+
+
 	.exercises__item
 		width: 100%
 
@@ -392,3 +439,9 @@
 		height: 35px
 		line-height: 35px
 		font-size: 16px
+
+
+	.main
+		&::after
+			display: none
+

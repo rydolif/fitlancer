@@ -1,0 +1,229 @@
+.login
+
+	&::after
+		content: 'Sing in'
+
+
+	&__container
+		max-width: 570px
+		width: 100%
+		background-color: $bg
+		border-radius: 30px
+		box-shadow: 0 0 25px 2px rgba(#0c0c0c, 1)
+		border-top: 1px solid rgba($text, .2)
+		z-index: 2
+		margin: 40px auto
+	
+	&__header
+		display: flex
+		justify-content: space-between
+		z-index: 1
+		padding: 35px 65px 0
+		border-bottom: 2px solid $accent
+
+		a
+			position: relative
+			width: 48%
+			padding-bottom: 30px
+			text-align: center
+			font-size: 24px
+			font-family: $title
+			color: $text
+			font-weight: 300
+
+			&::before
+				content: ''
+				position: absolute
+				bottom: -2.5px
+				right: 0
+				left: 0
+				height: 0
+				width: 100%
+				border-radius: 5px
+				background-color: $accent
+				box-shadow: 0 0 15px 2px rgba($accent, 1)
+				transition: all .6s
+				opacity: 0
+
+			&:hover,
+			&:focus
+				color: $accent
+
+				&::before
+					height: 5px
+					opacity: 1
+
+
+		.active
+			color: $accent
+
+			&::before
+				height: 5px
+				opacity: 1
+
+	&__form
+		padding: 50px 65px 50px
+
+		&_line
+			margin-bottom: 25px
+
+			&--two
+				display: flex
+				justify-content: space-between
+				flex-wrap: wrap
+
+				input
+					width: 48%
+
+		&_check
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-bottom: 50px
+
+			a
+				font-size: 16px
+				color: $text
+				text-decoration: underline
+
+				&:hover,
+				&:focus
+					color: $accent
+					text-decoration: underline
+		
+			label
+				position: relative
+				padding-left: 25px
+				cursor: pointer
+				margin-bottom: 0
+				margin-right: 0
+				font-size: 16px
+				color: $text
+				line-height: 1
+				transition: all .6s
+
+				&::before,
+				&::after
+					content: ''
+					position: absolute
+					left: 0
+
+				&::before
+					width: 15px
+					height: 15px
+					border: 1px solid $text
+
+				&::after
+					width: 7px
+					height: 7px
+					border: 1px solid $accent
+					background: $accent
+					left: 4px
+					top: 4px
+					transition: all .6s
+
+				&:hover,
+				&:focus
+					color: $accent
+
+			input[type="checkbox"]
+				display: none
+
+			input[type="checkbox"]:checked + label::after
+				transform: scale(1)
+
+			input[type="checkbox"] + label::after
+				transform: scale(0)
+
+			input[type="radio"]
+				display: none
+
+			input[type="radio"]:checked + label::after
+				transform: scale(1)
+
+			input[type="radio"] + label::after
+				transform: scale(0)
+		
+		&_btn
+			display: flex
+			justify-content: flex-end
+
+			button
+				background-color: transparent
+
+		&_menthor
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-bottom: 25px
+
+			input
+				display: none
+
+			input[type="radio"]:checked + label
+				background-color: $accent
+				border-color: $accent
+
+			input[type="checkbox"] + label::after
+				background-color: transparent
+
+		&_sex
+			display: flex
+			justify-content: space-around
+			margin-bottom: 25px
+
+			label,
+			span
+				line-height: 1
+
+			span
+				font-size: 16px
+				font-weight: 300
+
+			label
+				position: relative
+				padding-left: 25px
+				cursor: pointer
+				margin-bottom: 0
+				margin-right: 0
+				font-size: 16px
+				color: $text
+				line-height: 1
+				transition: all .6s
+
+				&::before,
+				&::after
+					content: ''
+					position: absolute
+					left: 0
+
+				&::before
+					width: 15px
+					height: 15px
+					border: 1px solid $text
+
+				&::after
+					width: 7px
+					height: 7px
+					border: 1px solid $accent
+					background: $accent
+					left: 4px
+					top: 4px
+					transition: all .6s
+
+				&:hover,
+				&:focus
+					color: $accent
+
+			input[type="radio"]
+				display: none
+
+			input[type="radio"]:checked + label::after
+				transform: scale(1)
+
+			input[type="radio"] + label::after
+				transform: scale(0)
+
+
+
+
