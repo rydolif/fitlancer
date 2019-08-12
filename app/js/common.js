@@ -1,5 +1,23 @@
 $(function() {
 
+//------------------------------acardeon---------------------------
+  $(".block__content").slideUp("slow");
+  $(".block").first().addClass('block--active');
+  $(".block--active .block__content").slideDown("slow");
+
+  $(".block__header").on("click", function(){
+    if ($(this).parent().hasClass('block--active')) {
+      $(this).parent().removeClass('block--active');
+      $(".block__content").slideUp("slow");
+    }
+    else {
+      $(".block--active .block__content").slideUp("slow");
+      $(".block--active").removeClass('block--active');
+      $(this).parent().addClass('block--active');
+      $(".block--active .block__content").slideDown("slow");
+    }
+  });
+
 //------------------------------гамбургер-----------------------------
   $('.hamburger').click(function() {
     $(this).toggleClass('hamburger--active');
@@ -8,30 +26,7 @@ $(function() {
   });
 
 //-------------------------------попандер---------------------------------------
-  $('.modal').popup({transition: 'all 0.3s'});
+  $('.modal').popup({transition: 'all 0.6s'});
 
-// //----------------------------------------fixed----------------------------------
-//   $(window).scroll(function(){
-//       if($(this).scrollTop()>20){
-//           $('.header').addClass('header--active');
-//       }
-//       else if ($(this).scrollTop()<20){
-//           $('.header').removeClass('header--active');
-//       }
-//   });
-
-// //-------------------------скорость якоря---------------------------------------
-//   $(".header__list").on("click","a", function (event) {
-//       event.preventDefault();
-//       var id  = $(this).attr('href'),
-//           top = $(id).offset().top;
-//       $('body,html').animate({scrollTop: top - 60}, 'slow', 'swing');
-//   //--------------------закриття меню при кліку на ссилку якоря--------------------
-//      // $('.hamburger').removeClass('hamburger--active');
-//      // $('.header-menu').removeClass('header-menu');
-//      // $('.header--active').removeClass('header--active');
-//      // $('.nav--active').removeClass('nav--active');
-
-//   });
   
 });
