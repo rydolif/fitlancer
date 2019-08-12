@@ -112,6 +112,12 @@
 
 @media only screen and (max-width : 992px)
 	.admin
+		&--table
+			margin-bottom: 30px
+
+			td
+				padding: 15px
+
 		&--download
 
 			&__right
@@ -305,6 +311,13 @@
 
 @media only screen and (max-width : 576px)
 	.admin
+		&__title
+			margin-bottom: 20px
+
+		&--table
+			tr
+				font-size: 14px
+
 		&--download
 			&__left
 				width: 100%
@@ -385,11 +398,15 @@
 
 
 @media only screen and (max-width : 480px)
-	.admin--list__item
-		width: 100%
+	.admin
+		&--table td
+			padding: 5px
+			
+		&--list__item
+			width: 100%
 
-		&:last-child
-			margin-bottom: 0
+			&:last-child
+				margin-bottom: 0
 
 	.login
 

@@ -2,6 +2,16 @@
 	&__btn
 		justify-content: flex-start
 
+	&__title
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		align-items: center
+		margin-bottom: 50px
+
+		h2
+			margin-bottom: 10px
+
 	&--download
 		display: flex
 		justify-content: space-between
@@ -179,6 +189,109 @@
 
 				.btn
 					padding: 0 25px
+	
+	&--table
+		width: 100%
+		text-align: center
+		margin-bottom: 40px
+
+		tr
+			font-size: 16px
+			transition: all .6s
+
+			&:hover
+				background-color: #343434
+
+			&:first-child
+				background-color: #343434
+
+
+		th
+			padding: 15px
+			font-weight: 300
+			color: #777b7b
+
+			&:first-child
+				border-bottom-left-radius: 30px
+				border-top-left-radius: 30px
+			&:last-child
+				border-top-right-radius: 30px
+				border-bottom-right-radius: 30px
+		
+		td
+			padding: 45px 15px
+
+			&:first-child
+				border-bottom-left-radius: 30px
+				border-top-left-radius: 30px
+			&:last-child
+				border-top-right-radius: 30px
+				border-bottom-right-radius: 30px
+			span
+				color: #777b7b
+
+
+		label
+			position: relative
+			padding-left: 25px
+			cursor: pointer
+			margin-right: 0
+			font-size: 16px
+			color: $text
+			line-height: 1
+			transition: all .6s
+
+			&::before,
+			&::after
+				content: ''
+				position: absolute
+				left: 0
+
+			&::before
+				width: 15px
+				height: 15px
+				border: 1px solid $text
+
+			&::after
+				width: 7px
+				height: 7px
+				border: 1px solid $accent
+				background: $accent
+				left: 4px
+				top: 4px
+				transition: all .6s
+
+			&:hover,
+			&:focus
+				color: $accent
+
+		input[type="checkbox"]
+			display: none
+
+		input[type="checkbox"]:checked + label::after
+			transform: scale(1)
+
+		input[type="checkbox"] + label::after
+			transform: scale(0)
+
+		&__btn
+			display: flex
+			justify-content: flex-end
+
+			.btn
+				max-width: 320px
+				width: 100%
+				background-color: transparent
+
+				&:hover,
+				&:focus
+					background-color: $accent
+
+
+
+
+
+
 
 
 
