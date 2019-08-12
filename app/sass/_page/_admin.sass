@@ -1,0 +1,142 @@
+.admin
+	&__btn
+		justify-content: flex-start
+
+	&--download
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+		label
+			position: relative
+			padding-left: 25px
+			cursor: pointer
+			margin-bottom: 0
+			margin-right: 0
+			font-size: 16px
+			color: $text
+			line-height: 1
+			transition: all .6s
+
+			&::before,
+			&::after
+				content: ''
+				position: absolute
+				left: 0
+
+			&::before
+				width: 15px
+				height: 15px
+				border: 1px solid $text
+
+			&::after
+				width: 7px
+				height: 7px
+				border: 1px solid $accent
+				background: $accent
+				left: 4px
+				top: 4px
+				transition: all .6s
+
+			&:hover,
+			&:focus
+				color: $accent
+
+		input[type="radio"]
+			display: none
+
+		input[type="radio"]:checked + label::after
+			transform: scale(1)
+
+		input[type="radio"] + label::after
+			transform: scale(0)
+
+		&__left
+			max-width: 330px
+			width: 100%
+
+			&_img
+				position: relative
+				display: block
+				width: 330px
+				height: 350px
+				margin-bottom: 35px
+				background-color: #000
+
+				&:hover,
+				&:focus
+					img
+						transform: translate(-50%, -50%) scale(1.1)
+
+
+				img
+					position: absolute
+					left: 50%
+					top: 50%
+					transform: translate(-50%, -50%) scale(1)
+					transition: all .6s
+
+
+			.btn
+				width: 100%
+				margin-bottom: 20px
+
+				&:last-child
+					margin-bottom: 0
+		
+		&__right
+			width: 68%
+
+			p
+				font-size: 18px
+
+			&_title
+				width: 18%
+				color: #777b7b
+
+			&_line
+				display: flex
+				margin-bottom: 50px
+
+			&_block
+				width: 100%
+
+			&_header
+				position: relative
+				background-color: #000
+				padding: 15px 30px
+				border-radius: 25px
+				line-height: 1
+
+			&_select
+				margin-bottom: 50px
+				background-color: #000
+				border-radius: 25px
+
+				div
+					padding: 15px 30px
+
+
+			&_radio
+				label
+					margin-right: 70px
+
+					&:last-child
+						margin-right: 0
+
+			&_list
+				flex-direction: column
+				label
+					margin-bottom: 15px
+
+					&:last-child
+						margin-bottom: 0
+		
+		.block
+			margin-bottom: 50px
+
+			&__content
+				padding-top: 20px
+
+
+

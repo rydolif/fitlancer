@@ -1,8 +1,9 @@
 $(function() {
 
+
 //------------------------------acardeon---------------------------
   $(".block__content").slideUp("slow");
-  $(".block").first().addClass('block--active');
+  // $(".block").first().addClass('block--active');
   $(".block--active .block__content").slideDown("slow");
 
   $(".block__header").on("click", function(){
