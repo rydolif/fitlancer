@@ -123,15 +123,23 @@
 
 
 @media only screen and (max-width : 992px)
-	.profile--my__right_col
-		width: 48%
+	.profile--my
+		&__left
+			&_img
+				span
+					font-size: 14px
+					top: 10px
+					right: 10px
+					padding: 3px 5px
+		&__right_col
+			width: 48%
 
-		li,
-		span
-			font-size: 14px
+			li,
+			span
+				font-size: 14px
 
-		.btn
-			padding: 0 13px
+			.btn
+				padding: 0 13px
 
 	.admin
 		&--table
