@@ -1,0 +1,127 @@
+.konstruktor
+
+	&__container
+		max-width: 930px
+
+	&__title
+		display: flex
+		justify-content: space-between
+		margin-bottom: 95px
+		flex-wrap: wrap
+
+		h2
+			margin-bottom: 10px
+			width: auto
+
+		div
+			display: flex
+			flex-direction: column
+			width: auto
+			margin-bottom: 10px
+
+		a
+			color: $text
+			display: flex
+			font-size: 18px
+			width: auto
+
+			&:hover,
+			&:focus
+				color: $accent
+
+				span
+					border-color: $accent
+					&::before
+						border-color: $accent
+
+		span
+			position: relative
+			display: block
+			width: 22px
+			height: 22px
+			border: 2px solid #fff
+			border-radius: 50%
+			transition: all .6s
+			margin: 0 15px 0 0
+
+			&::before
+				content: ''
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-30%, -50%) rotate(-45deg)
+				width: 8px
+				height: 8px
+				border-top: 1.3px solid #fff
+				border-left: 1.3px solid #fff
+				transition: all .6s
+		
+		.btn
+			padding: 0 25px
+
+	
+	&__list
+
+		&_item
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-bottom: 25px
+
+			&:hover,
+			&:focus
+				.konstruktor__list_link
+					background-color: #616161
+					border: 1px solid transparent
+
+				b
+					opacity: 1
+
+		&_link
+			position: relative
+			display: flex
+			justify-content: space-between
+			background-color: transparent
+			border-radius: 25px
+			color: $text
+			width: 100%
+			line-height: 1
+			margin-right: 30px
+			transition: all .6s
+			border: 1px solid #fff
+
+			&:hover,
+			&:focus
+				color: $text
+
+			span
+				display: block
+				padding: 15px
+			
+			b
+				display: block
+				background-color: #8d8d8d
+				padding: 15px 60px 15px 35px
+				border-radius: 25px
+				font-size: 18px
+				font-family: $title
+				opacity: 0
+				transition: all .6s
+
+				&:after
+					content: ''
+					display: block
+					position: absolute
+					right: 30px
+					top: 50%
+					transform: translate(0, -50%) rotate(135deg)
+					width: 10px
+					height: 10px
+					border-top: 2px solid $text
+					border-left: 2px solid $text
+
+
+
+
+
+

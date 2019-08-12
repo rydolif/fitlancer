@@ -33,6 +33,9 @@
 
 
 @media only screen and (max-width : 1200px)
+	.konstruktor__title
+		margin-bottom: 50px
+
 	.profile--my__right
 		width: 72%
 
@@ -274,6 +277,20 @@
 
 
 @media only screen and (max-width : 767px)
+	.konstruktor
+		&__title
+			margin-bottom: 30px
+
+		&__list_link
+			margin-right: 15px
+
+			b
+				padding: 15px 35px 15px 15px
+				font-size: 16px
+
+				&::after
+					right: 15px
+
 	.profile
 		&--trainer
 			&__textarea
@@ -465,6 +482,19 @@
 
 
 @media only screen and (max-width : 480px)
+	.konstruktor__list
+		&_item
+			flex-direction: column
+			margin-bottom: 25px
+
+		&_link
+			margin-bottom: 10px
+			margin-right: 0
+
+		.btn
+			width: 100%
+
+
 	.profile--my
 		&__left,
 		&__right
@@ -475,8 +505,6 @@
 
 		&__right
 			margin-bottom: 0
-
-
 
 	.admin
 		&--table td
