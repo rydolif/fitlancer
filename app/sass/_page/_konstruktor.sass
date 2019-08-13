@@ -9,6 +9,12 @@
 		margin-bottom: 55px
 		flex-wrap: wrap
 
+		&--left
+			justify-content: flex-start
+
+			div
+				margin-right: 70px
+
 		h2
 			margin-bottom: 10px
 			width: auto
@@ -173,5 +179,180 @@
 			display: flex
 			justify-content: flex-end
 			width: 100%
+
+
+	&--step
+
+		&__title
+			display: flex
+			align-items: center
+			margin-bottom: 40px
+
+			h3
+				font-size: 18px
+				margin-right: 100px
+				text-transform: uppercase
+
+			p
+				margin-right: 20px
+				font-size: 18px
+				font-family: $title
+
+			select
+				background-color: transparent
+				border: 1px solid #5f6262
+				border-radius: 25px
+				outline: none
+				color: #5f6262
+				height: 50px
+				padding: 0 50px
+				font-size: 18px
+				font-family: $title
+		
+		&__comment
+			margin-bottom: 50px
+
+			&_item
+				position: relative
+				padding: 80px 90px 70px 25px
+				margin-bottom: 25px
+				background-color: #000
+				display: flex
+				justify-content: space-between
+				justify-content: flex-start
+
+				&:last-child
+					margin-bottom: 0
+
+
+				p
+					display: flex
+					justify-content: space-between
+					font-size: 16px
+					margin-bottom: 30px
+					font-weight: 300
+
+					&:last-child
+						margin-bottom: 0
+
+				span
+					width: 77%
+
+					&:first-child
+						width: 20%
+						color: #5f6262
+			
+			&_img
+				width: 220px
+				height: auto
+				margin-right: 90px
+
+				img
+					width: 220px
+
+			&_option
+				position: absolute
+				top: 12px
+				right: 12px
+				display: flex
+
+				a
+					display: block
+					border: 1px solid $text
+					padding: 15px 20px
+					border-radius: 25px
+					margin-right: 12px
+					background-color: #000
+
+					&:hover,
+					&:focus
+						background-color: $accent
+						border-color: $accent
+
+					&:last-child
+						margin-right: 0
+
+				img
+					margin-right: 0
+			
+		&__form
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			border: 1px solid #fff
+			border-radius: 25px
+			padding: 50px
+
+			.btn
+				padding: 0 15px
+
+			h3
+				font-size: 18px
+				margin-right: 100px
+				text-transform: uppercase
+
+			&_header
+				margin-bottom: 45px
+				display: flex
+				align-items: center
+				width: 100%
+
+				.btn
+					margin-right: 30px
+
+					&:last-child
+						margin-right: 0
+
+			&_left
+				width: 20%
+
+			&_img
+				position: relative
+				width: 230px
+				height: 230px
+				background: #343434
+				margin-bottom: 30px
+
+				img
+					position: absolute
+					left: 50%
+					top: 50%
+					transform: translate(-50%, -50%)
+					max-width: 70px
+
+			&_right
+				width: 75%
+
+				label
+					color: #5f6262
+					font-size: 16px
+					width: 20%
+					padding-top: 10px
+					line-height: 1.1
+
+				input, textarea
+					width: 75%
+
+				textarea
+					min-height: 160px
+			
+				p
+					display: flex
+					justify-content: space-between
+					flex-wrap: wrap
+					margin-bottom: 30px
+
+					&:last-child
+						margin-bottom: 0
+			
+			&_btn
+				display: flex
+				justify-content: flex-end
+				width: 100%
+				margin-top: 50px
+
+	
+
+
 
 
