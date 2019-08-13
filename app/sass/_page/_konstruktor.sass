@@ -6,7 +6,7 @@
 	&__title
 		display: flex
 		justify-content: space-between
-		margin-bottom: 95px
+		margin-bottom: 55px
 		flex-wrap: wrap
 
 		h2
@@ -119,9 +119,59 @@
 					height: 10px
 					border-top: 2px solid $text
 					border-left: 2px solid $text
+	
 
+	&__program
+		margin-bottom: 70px
 
+		p
+			display: flex
+			flex-wrap: wrap
+			align-items: center
+			font-size: 16px
+			color: #5f6262
+			margin-bottom: 80px
 
+		span
+			display: block
+			width: 40%
 
+		b
+			position: relative
+			margin-right: 75px
+
+			&:last-child
+				margin-right: 0
+
+		label
+			position: absolute
+			bottom: 100%
+			left: 50%
+			transform: translate(-50%, 0)
+			color: $text
+			white-space: nowrap
+
+		input
+			background: #000
+			outline: none
+			border: none
+			height: 50px
+			width: 110px
+			color: $text
+			padding: 0 35px
+			text-align: center
+			font-size: 16px
+			font-family: $fonts
+			border-radius: 30px
+			font-weight: 700
+
+			&::placeholder
+				color: $text
+				font-weight: 700
+		
+		&_btn
+			display: flex
+			justify-content: flex-end
+			width: 100%
 
 

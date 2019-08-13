@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Konstruktor 2</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" href="img/favicon.ico">
+	<meta name="theme-color" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css?v=1">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:600&display=swap&subset=cyrillic" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="header__container container">
+
+			<button class="hamburger" type="button">
+				<span class="hamburger__item"></span>
+			</button>
+
+			<nav class="header__nav nav">
+				<ul>
+					<li><a href="about.html">О нас</a></li>
+					<li><a href="partners.html">Наши тренеры</a></li>
+					<li><a href="list.html">Список упражнений</a></li>
+				</ul>
+			</nav>
+
+			<a href="index.html" class="header__logo">
+				<img src="img/logo.png" alt="logo">
+			</a>
+
+			<div class="header__btn">
+				<a href="#" class="btn"><img src="img/login.png" alt="">Вход</a>
+			</div>
+
+		</div>
+	</header>
+
+	<section class="exercises">
+		<div class="konstruktor__container container">
+
+			<div class="konstruktor__title">
+				<h2>Создать новую программу</h2>
+			</div>
+				
+			<form class="konstruktor__program">
+				<p>
+					<span>1. Выберите количество периодов</span>
+					<input type="number" placeholder="1" min="1" max="52">
+				</p>
+				
+				<p>
+					<span>2. Выберите количество недель</span>
+					<b>
+						<label for="">1 период</label>
+						<input type="number" placeholder="1" min="1" max="52">
+					</b>
+					<b>
+						<label for="">2 период</label>
+						<input type="number" placeholder="1" min="1" max="52">
+					</b>
+					<b>
+						<label for="">3 период</label>
+						<input type="number" placeholder="1" min="1" max="52">
+					</b>
+				</p>
+
+				<div class="konstruktor__program_btn">
+					<button class="btn">Добавить</button>
+				</div>
+
+			</form>
+
+			<div class="konstruktor__title">
+				<h2>Периоды</h2>
+			</div>
+
+			<div class="konstruktor__list">
+
+				<div class="konstruktor__list_item">
+					<a href="#" class="konstruktor__list_link">
+						<span>1 период</span>
+						<b>Перейти</b>
+					</a>
+					<a href="#" class="btn">Удалить</a>
+				</div>
+				<div class="konstruktor__list_item">
+					<a href="#" class="konstruktor__list_link">
+						<span>2 период</span>
+						<b>Перейти</b>
+					</a>
+					<a href="#" class="btn">Удалить</a>
+				</div>
+				<div class="konstruktor__list_item">
+					<a href="#" class="konstruktor__list_link">
+						<span>3 период</span>
+						<b>Перейти</b>
+					</a>
+					<a href="#" class="btn">Удалить</a>
+				</div>
+
+			</div>
+			
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__container container">
+
+			<div class="footer__col">
+				<p>© Fitlancer, 2019, </p>
+				<p><a href="#">все права защищены</a></p>
+			</div>
+
+			<div class="footer__col">
+				<h3>O Fitlancer</h3>
+				<ul>
+					<li><a href="#">О проекте</a></li>
+					<li><a href="#">Пользовательское соглашение</a></li>
+					<li><a href="#">Политика конфиденциальности</a></li>
+				</ul>
+			</div>
+
+			<div class="footer__col">
+				<h3>Меню</h3>
+				<ul>
+					<li><a href="about.html">О нас</a></li>
+					<li><a href="partners.html">Наши тренеры</a></li>
+					<li><a href="list.html">Список упражнений</a></li>
+				</ul>
+			</div>
+
+			<div class="footer__col">
+				<h3>Связь с нами</h3>
+				<div class="footer__soc">
+					<a href="#" target="_blank"><img src="img/footer--in.png" alt=""></a>
+					<a href="#" target="_blank"><img src="img/footer--tg.png" alt=""></a>
+					<a href="#" target="_blank"><img src="img/footer--vk.png" alt=""></a>
+				</div>
+				<a href="mailto:fitlancer@gmail.com">fitlancer@gmail.com</a>
+			</div>
+
+			<div class="footer__col">
+				<a href="#" class="btn">Обратная связь</a>
+			</div>
+
+		</div>
+	</footer>
+
+	<script src="js/scripts.min.js"></script>
+
+
+</body>
+</html>

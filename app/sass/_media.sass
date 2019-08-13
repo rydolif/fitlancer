@@ -34,7 +34,7 @@
 
 @media only screen and (max-width : 1200px)
 	.konstruktor__title
-		margin-bottom: 50px
+		margin-bottom: 40px
 
 	.profile--my__right
 		width: 72%
@@ -126,6 +126,9 @@
 
 
 @media only screen and (max-width : 992px)
+	.konstruktor__program b
+		margin-right: 40px
+
 	.profile
 		&--program__priz
 			padding: 5px
@@ -277,6 +280,24 @@
 
 
 @media only screen and (max-width : 767px)
+	.konstruktor__program
+		p
+			font-size: 14px
+			margin-bottom: 40px
+
+		span
+			width: 35%
+
+		b
+			margin-right: 25px
+
+		input
+			width: 80px
+			padding: 0 5px
+
+		label
+			font-size: 14px
+
 	.konstruktor
 		&__title
 			margin-bottom: 30px
@@ -482,17 +503,36 @@
 
 
 @media only screen and (max-width : 480px)
-	.konstruktor__list
-		&_item
-			flex-direction: column
-			margin-bottom: 25px
 
-		&_link
-			margin-bottom: 10px
-			margin-right: 0
+	.konstruktor
+		&__program
+			p
+				text-align: center
+				justify-content: space-around
+				margin-bottom: 20px
 
-		.btn
-			width: 100%
+			span
+				width: 100%
+				margin-bottom: 20px
+
+			b
+				margin-right: 0
+				margin-bottom: 20px
+
+			label
+				bottom: 80%
+
+		&__list
+			&_item
+				flex-direction: column
+				margin-bottom: 25px
+
+			&_link
+				margin-bottom: 10px
+				margin-right: 0
+
+			.btn
+				width: 100%
 
 
 	.profile--my
