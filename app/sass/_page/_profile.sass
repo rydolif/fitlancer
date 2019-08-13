@@ -203,11 +203,182 @@
 				min-height: 100%
 				height: 100%
 
+	
+	&--massag
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
 
+		p
+			font-size: 14px
+			color: #777b7b
+			width: 100%
 
+		time
+			color: #777b7b
+			font-family: $title
+			font-size: 14px
 
+		b
+			font-size: 16px
+			font-family: $title
+			color: $text
 
+		&__user,
+		&__chat
+			background-color: #000
 
+		&__user
+			width: 30%
+
+			&_header
+				padding: 25px
+				border-bottom: 1px solid #242424
+
+			&_list
+				max-height: 570px
+				overflow: auto
+				margin-right: 20px
+
+			&_item
+				position: relative
+				border-bottom: 1px solid #242424
+				padding: 30px 25px
+				display: flex
+				justify-content: space-between
+				align-items: center
+				width: 93%
+
+				span,
+				b
+					display: block
+
+				img
+					width: 34px
+					height: 34px
+					border-radius: 50%
+					margin-right: 10px
+
+				&--active
+
+					&::before
+						content: ''
+						position: absolute
+						left: 0
+						top: 0
+						width: 5px
+						background-color: $accent
+						height: 100%
+
+				&--online
+					&::after
+						content: ''
+						position: absolute
+						right: -5px
+						width: 10px
+						height: 10px
+						background-color: #00a651
+						border-radius: 50%
+
+		&__chat
+			width: 68%
+
+			&_header
+				position: relative
+				display: flex
+				align-items: center
+				padding: 20px 25px
+				border-bottom: 1px solid #242424
+
+				img
+					width: 34px
+					height: 34px
+					border-radius: 50%
+					margin-right: 10px
+
+				b, span
+					display: block
+
+				span
+					display: flex
+					align-items: center
+					color: #777b7b
+
+					span
+						width: 12px
+						height: 12px
+						background-color: #00a651
+						border-radius: 50%
+						margin-right: 5px
+			
+			&_content
+				// position: relative
+				// padding: 30px
+				max-height: 460px
+				overflow: auto
+				margin-left: 30px
+				margin-right: 15px
+				margin-top: 30px
+				width: 94%
+
+			&_item
+				position: relative
+				display: flex
+				align-items: center
+				margin-bottom: 20px
+				width: 98%
+
+				p
+					background-color: #242424
+					width: auto
+					margin-right: 20px
+					padding: 15px
+					border-top-left-radius: 30px
+					border-top-right-radius: 30px
+					border-bottom-right-radius: 30px
+					color: $text
+
+				&--red
+					justify-content: flex-end
+
+					p
+						background-color: $accent
+						margin-right: 10px
+						margin-left: 20px
+						border-bottom-right-radius: 0
+						border-bottom-left-radius: 30px
+
+			&_form
+				padding: 20px 50px 20px 30px
+
+				textarea
+					min-height: 50px
+					height: 50px
+					padding: 10px 20px
+					border-radius: 50px
+					background-image: url(../img/masseg.png)
+					background-repeat: no-repeat
+					background-position: 96% 50%
+					line-height: 1.5
+
+					&::placeholder
+						line-height: 30px
+		
+			.link
+				position: absolute
+				bottom: -10px
+				left: 50%
+				transform: translate(-50%, 0)
+				background-color: #242424
+				color: #777b7b
+				font-family: $title
+				padding: 2px 60px
+				border-radius: 15px
+
+				&:hover,
+				&:focus
+					background-color: $accent
+					color: $text
 
 
 

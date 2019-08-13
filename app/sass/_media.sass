@@ -33,6 +33,12 @@
 
 
 @media only screen and (max-width : 1200px)
+	.profile--massag__user_item
+		padding: 15px
+		flex-wrap: wrap
+		text-align: center
+		justify-content: center
+		
 	.konstruktor
 		&--step
 			&__form
@@ -163,6 +169,18 @@
 
 
 @media only screen and (max-width : 992px)
+	.profile--massag
+		&__chat
+			.link
+				padding: 3px 35px
+				white-space: nowrap
+
+			&_content
+				margin-left: 15px
+
+		&__user_list
+			margin-right: 10px
+
 	.konstruktor
 		&--step
 			&__form
@@ -510,6 +528,14 @@
 
 
 @media only screen and (max-width : 576px)
+	.profile--massag
+		&__user,
+		&__chat
+			width: 100%
+
+		&__user
+			margin-bottom: 20px
+
 	.konstruktor--step
 		&__comment_option a
 			padding: 10px
@@ -617,6 +643,9 @@
 
 
 @media only screen and (max-width : 480px)
+	.profile--massag__chat_form,
+	.profile--massag__user_header
+		padding: 15px
 
 	.konstruktor
 		&__title--left
