@@ -1,4 +1,10 @@
 
+@media only screen and (max-width : 1920px)
+	.main
+		&::after
+			font-size: 350px
+
+
 @media only screen and (max-width : 1440px)
 	.exercises
 		&__btn input
@@ -9,6 +15,10 @@
 
 	.container
 		max-width: 1200px
+
+	.main
+		&::after
+			font-size: 300px
 
 	.header__logo
 		img
@@ -33,6 +43,11 @@
 
 
 @media only screen and (max-width : 1200px)
+	
+	.main
+		&::after
+			font-size: 250px
+
 	.profile--massag__user_item
 		padding: 15px
 		flex-wrap: wrap
@@ -168,7 +183,8 @@
 			flex-wrap: wrap
 
 
-@media only screen and (max-width : 992px)
+@media only screen and (max-width : 992px)	
+
 	.profile--massag
 		&__chat
 			.link
@@ -230,8 +246,6 @@
 			&__left
 				width: 40%
 
-
-
 	.admin
 		&--table
 			margin-bottom: 30px
@@ -240,6 +254,8 @@
 				padding: 15px
 
 		&--download
+			&__left_img
+				height: 220px
 
 			&__right
 				p, label
@@ -332,7 +348,7 @@
 
 	.main
 		&::after
-			font-size: 385px
+			display: none
 
 		&__before
 			display: none
@@ -349,6 +365,12 @@
 
 
 @media only screen and (max-width : 767px)
+		
+	.main
+		&::after
+			display: none
+
+
 	.konstruktor
 		&__title--left
 			justify-content: space-between
@@ -538,7 +560,7 @@
 
 	.konstruktor--step
 		&__comment_option a
-			padding: 10px
+			padding: 7px 10px
 
 		&__form_header
 			flex-direction: column
@@ -568,7 +590,9 @@
 				width: 100%
 
 				&_img
+					width: 190px
 					margin-bottom: 15px
+					margin: 0 auto 15px
 
 				.btn
 					margin-bottom: 15px
@@ -601,6 +625,19 @@
 			top: 75px
 
 	.trainers
+		&__item
+			&_footer
+				padding-right: 40px !important
+
+				li
+					margin-bottom: 5px !important
+
+					&:last-child
+						margin-bottom: 0 !important
+
+			&_priz
+				padding: 7px
+
 		&__list
 			margin-bottom: 0
 
@@ -652,6 +689,8 @@
 			justify-content: center
 
 			div
+				width: 100%
+				align-items: center
 				margin-right: 0
 
 		&--step
@@ -726,7 +765,6 @@
 			.btn
 				width: 100%
 
-
 	.profile--my
 		&__left,
 		&__right
@@ -739,6 +777,9 @@
 			margin-bottom: 0
 
 	.admin
+		&__btn
+			justify-content: center
+
 		&--table td
 			padding: 5px
 			
@@ -801,7 +842,7 @@
 			margin-bottom: 20px
 
 		&__item
-			width: 100%
+			width: 80%
 			margin-bottom: 15px
 			border-radius: 35px
 
@@ -869,8 +910,6 @@
 			&:last-child
 				margin-bottom: 0
 
-
-
 	.header
 		padding: 5px 0
 
@@ -903,7 +942,8 @@
 		line-height: 35px
 		font-size: 16px
 
+	.profile--my__left_img
+		width: 70%
+		margin: 0 auto 15px
 
-	.main
-		&::after
-			display: none
+
