@@ -20,7 +20,6 @@
 
 <body>
 
-
 	<header class="header">
 		<div class="header__container container">
 
@@ -54,7 +53,7 @@
 				<h2>мой профиль</h2>
 				<div>
 					<a href="#" class="btn">Сообщения</a>
-					<a href="#" class="btn">Мои программы</a>
+					<a href="#" class="btn program_open">Мои программы</a>
 				</div>
 			</div>
 
@@ -107,15 +106,15 @@
 
 			<div class="footer__col">
 				<p>© Fitlancer, 2019, </p>
-				<p><a href="#">все права защищены</a></p>
+				<p><a href="img/policy.docx" download>все права защищены</a></p>
 			</div>
 
 			<div class="footer__col">
 				<h3>O Fitlancer</h3>
 				<ul>
 					<li><a href="#">О проекте</a></li>
-					<li><a href="#">Пользовательское соглашение</a></li>
-					<li><a href="#">Политика конфиденциальности</a></li>
+					<li><a href="img/policy.docx" download>Пользовательское соглашение</a></li>
+					<li><a href="img/policy.docx" download>Политика конфиденциальности</a></li>
 				</ul>
 			</div>
 
@@ -139,12 +138,142 @@
 			</div>
 
 			<div class="footer__col">
-				<a href="#" class="btn">Обратная связь</a>
+				<a href="#" class="btn order_open">Обратная связь</a>
 			</div>
 
 		</div>
 	</footer>
 
+	<!-- modal -->
+		<div class="modal" id="order">
+			<button class="close order_close" type="button">
+				<span></span>
+				<span></span>
+			</button>
+
+			<div class="modal__header login__header">
+				<h3>Обратная связь</h3>
+			</div>
+
+			<form class="login__form">
+				<div class="login__form_line">
+					<input type="text" placeholder="Имя" required>
+				</div>
+				<div class="login__form_line">
+					<input type="email" placeholder="E-mail" required>
+				</div>
+				<div class="login__form_line">
+					<textarea name="" placeholder="Вопрос"></textarea>
+				</div>
+				<div class="login__form_btn">
+					<button class="btn">Войти</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="modal--program modal" id="program">
+			<button class="close program_close" type="button">
+				<span></span>
+				<span></span>
+			</button>
+
+			<div class="modal--program__btn">
+				<p>Группа мышц</p>
+				<a href="#" class="btn">Дельты</a>
+				<a href="#" class="btn">Бицепс</a>
+				<a href="#" class="btn">Трицепс</a>
+				<a href="#" class="btn">Грудные мышци</a>
+				<a href="#" class="btn">Пресс</a>
+				<a href="#" class="btn">Спина</a>
+				<a href="#" class="btn">Ягодицы</a>
+				<a href="#" class="btn">Ноги</a>
+				<a href="#" class="btn">Мульти</a>
+				<a href="#" class="btn">Стретчинг</a>
+			</div>
+
+			<div class="admin--list">
+				
+				<div class="admin--list__item">
+					<a href="#" class="gif_open">
+						<span></span>
+						<img src="img/admin--list1.jpg" alt="">
+					</a>
+					<p>Название упражнения</p>
+				</div>
+				
+				<div class="admin--list__item">
+					<a href="#" class="gif_open">
+						<span></span>
+						<img src="img/admin--list2.jpg" alt="">
+					</a>
+					<p>Название упражнения</p>
+				</div>
+				
+				<div class="admin--list__item">
+					<a href="#" class="gif_open">
+						<span></span>
+						<img src="img/admin--list3.jpg" alt="">
+					</a>
+					<p>Название упражнения</p>
+				</div>
+				
+				<div class="admin--list__item">
+					<a href="#" class="gif_open">
+						<span></span>
+						<img src="img/admin--list4.jpg" alt="">
+					</a>
+					<p>Название упражнения</p>
+				</div>
+				
+				<div class="admin--list__item">
+					<a href="#" class="gif_open">
+						<span></span>
+						<img src="img/admin--list5.jpg" alt="">
+					</a>
+					<p>Название упражнения</p>
+				</div>
+				
+				<div class="admin--list__item">
+					<a href="#" class="gif_open">
+						<span></span>
+						<img src="img/admin--list6.jpg" alt="">
+					</a>
+					<p>Название упражнения</p>
+				</div>
+
+				<div class="admin--list__item">
+					<a href="#" class="gif_open">
+						<span></span>
+						<img src="img/admin--list7.jpg" alt="">
+					</a>
+					<p>Название упражнения</p>
+				</div>
+
+				<div class="admin--list__item">
+					<a href="#" class="gif_open">
+						<span></span>
+						<img src="img/admin--list8.jpg" alt="">
+					</a>
+					<p>Название упражнения</p>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="modal--gif modal" id="gif">
+			<button class="close gif_close" type="button">
+				<span></span>
+				<span></span>
+			</button>
+
+			<div class="modal__header login__header">
+				<h3>Название упражнения</h3>
+			</div>
+
+			<img src="img/animation1.gif" alt="">
+		</div>
+	<!-- modal end-->
+	
 	<script src="js/scripts.min.js"></script>
 
 

@@ -43,6 +43,15 @@
 
 
 @media only screen and (max-width : 1200px)
+	.close
+		width: 40px
+		height: 40px
+
+	.modal
+		h3
+			font-size: 18px
+			margin: 0 auto
+			padding-bottom: 15px
 	
 	.main
 		&::after
@@ -184,6 +193,12 @@
 
 
 @media only screen and (max-width : 992px)	
+	.modal
+		&--program
+			padding: 30px 30px 0 30px
+
+			&__btn
+				margin-bottom: 30px
 
 	.profile--massag
 		&__chat
@@ -365,6 +380,12 @@
 
 
 @media only screen and (max-width : 767px)
+	
+	.header__login
+		font-size: 16px
+
+		img
+			margin-right: 5px
 		
 	.main
 		&::after
@@ -679,7 +700,22 @@
 			font-size: 285px
 
 
-@media only screen and (max-width : 480px)
+@media only screen and (max-width : 480px)	
+	.close
+		width: 40px
+		height: 40px
+
+		span
+			height: 18px
+			width: 3px
+
+	.modal--program
+		padding-bottom: 30px
+
+	.header__login
+		b
+			display: none
+			
 	.profile--massag__chat_form,
 	.profile--massag__user_header
 		padding: 15px
@@ -784,10 +820,19 @@
 			padding: 5px
 			
 		&--list__item
-			width: 100%
+			width: 80%
+			margin-bottom: 20px
 
 			&:last-child
 				margin-bottom: 0
+
+			img
+				margin-bottom: 10px
+
+			p
+				padding: 7px
+				&:last-child
+					margin-bottom: 0
 
 	.login
 

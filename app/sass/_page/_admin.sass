@@ -145,12 +145,55 @@
 		flex-wrap: wrap
 
 		&__item
+
 			width: 23.5%
 			margin-bottom: 80px
 			transition: all .6s
 
 			&:hover
 				margin-top: -30px
+
+			a
+				position: relative
+				display: block
+
+				&:hover,
+				&:focus
+					span
+						opacity: 1
+						transform: translate(-50%, -50%) scale(1)
+
+				span
+					display: block
+					position: absolute
+					left: 50%
+					top: 50%
+					transform: translate(-50%, -50%) scale(0)
+					background-color: $accent
+					height: 50px
+					width: 70px
+					border-radius: 25px
+					opacity: 0
+					transition: all .6s
+
+					&::before,
+					&::after
+						content: ''
+						display: block
+						position: absolute
+						left: 50%
+						top: 50%
+						transform: translate(-50%, -50%)
+						background-color: $text
+
+					&::before
+						width: 3px
+						height: 16px
+
+					&::after
+						width: 16px
+						height: 3px
+
 
 			img
 				margin-bottom: 20px
