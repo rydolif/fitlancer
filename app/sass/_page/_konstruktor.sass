@@ -103,6 +103,7 @@
 			span
 				display: block
 				padding: 15px
+				font-size: 16px
 			
 			b
 				display: block
@@ -113,6 +114,10 @@
 				font-family: $title
 				opacity: 0
 				transition: all .6s
+				
+				&:hover,
+				&:focus
+					background-color: $accent
 
 				&:after
 					content: ''
@@ -125,7 +130,7 @@
 					height: 10px
 					border-top: 2px solid $text
 					border-left: 2px solid $text
-	
+
 
 	&__program
 		margin-bottom: 70px
