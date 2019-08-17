@@ -248,12 +248,52 @@
 						color: #5f6262
 			
 			&_img
+				position: relative
+				display: block
 				width: 220px
-				height: auto
+				height: 220px
 				margin-right: 90px
+				margin-bottom: 15px
+
+				&:hover,
+				&:focus
+					span
+						opacity: 1
+						transform: translate(-50%, -50%) scale(1)
 
 				img
 					width: 220px
+
+				span
+					display: block
+					position: absolute
+					left: 50%
+					top: 50%
+					transform: translate(-50%, -50%) scale(0)
+					background-color: $accent
+					height: 50px !important
+					width: 70px !important
+					border-radius: 25px
+					opacity: 0
+					transition: all .6s
+
+					&::before,
+					&::after
+						content: ''
+						display: block
+						position: absolute
+						left: 50%
+						top: 50%
+						transform: translate(-50%, -50%)
+						background-color: $text
+
+					&::before
+						width: 3px
+						height: 16px
+
+					&::after
+						width: 16px
+						height: 3px
 
 			&_option
 				position: absolute
