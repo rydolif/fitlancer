@@ -6,6 +6,17 @@
 
 
 @media only screen and (max-width : 1440px)
+	.index__item
+		width: 23%
+
+		img
+			width: 100%
+			height: auto
+
+		p
+			padding: 15px
+
+
 	.exercises
 		&__btn input
 			width: 37%
@@ -192,7 +203,10 @@
 			flex-wrap: wrap
 
 
-@media only screen and (max-width : 992px)	
+@media only screen and (max-width : 992px)
+	.index__item
+		width: auto
+
 	.modal
 		&--program
 			padding: 30px 30px 0 30px
@@ -648,8 +662,6 @@
 	.trainers
 		&__item
 			&_footer
-				padding-right: 40px !important
-
 				li
 					margin-bottom: 5px !important
 
@@ -683,9 +695,6 @@
 					margin-left: 10px
 
 		&__item
-			&_header
-				padding-left: 10px
-
 			&_bal
 				padding: 10px
 				margin-right: 10px
@@ -698,6 +707,19 @@
 	.main
 		&::after
 			font-size: 285px
+
+	.login__form
+		padding: 24px
+
+		.btn
+			min-width: 48%
+			width: auto
+			white-space: nowrap
+			padding: 0 15px
+			margin-right: 2%
+
+			&:last-child
+				margin-right: 0
 
 
 @media only screen and (max-width : 480px)	
