@@ -88,7 +88,7 @@
 			display: flex
 			justify-content: space-between
 			background-color: transparent
-			border-radius: 25px
+			border-radius: 10px
 			color: $text
 			width: 100%
 			line-height: 1
@@ -109,7 +109,7 @@
 				display: block
 				background-color: #8d8d8d
 				padding: 15px 60px 15px 35px
-				border-radius: 25px
+				border-radius: 10px
 				font-size: 18px
 				font-family: $title
 				opacity: 0
@@ -206,7 +206,7 @@
 			select
 				background-color: transparent
 				border: 1px solid #5f6262
-				border-radius: 25px
+				border-radius: 10px
 				outline: none
 				color: #5f6262
 				height: 50px
@@ -229,9 +229,6 @@
 				&:last-child
 					margin-bottom: 0
 
-				&--two
-					padding: 25px
-
 
 				p
 					display: flex
@@ -249,6 +246,15 @@
 					&:first-child
 						width: 20%
 						color: #5f6262
+
+				&--two
+					padding: 25px
+					align-items: center
+					flex-direction: column
+
+
+			&_block
+				width: 100%
 			
 			&_img
 				position: relative
@@ -400,6 +406,97 @@
 				margin-top: 50px
 
 	
+
+.block
+	background-color: #000
+	border-radius: 20px
+	padding: 15px 100px 15px 40px
+	margin-bottom: 15px
+
+	&:last-child
+		margin-bottom: 0
+
+	&--active
+		.block__header
+			.arrow
+				border-color: $accent
+				transform: translate(0, -50%) rotate(180deg)
+
+				&::before
+					border-color: $accent
+
+	a
+		color: $text
+
+		&:hover,
+		&:focus
+			color: $accent
+
+	ol, ul
+		margin-bottom: 25px
+		padding-left: 20px
+
+	p
+		align-items: center
+		margin-right: 25px
+
+	&__header
+		position: relative
+		display: flex
+		align-items: center
+		width: 100%
+		position: relative
+		font-size: 18px
+		line-height: 1
+		cursor: pointer
+
+		.arrow
+			position: absolute
+			right: 0
+			top: 50%
+			transform: translate(0, -50%)
+			display: block
+			width: 30px !important
+			height: 30px !important
+			border: 2px solid #fff
+			border-radius: 50%
+			transition: all .6s
+
+			&::before
+				content: ''
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -70%) rotate(225deg)
+				width: 8px
+				height: 8px
+				border-top: 1.3px solid #fff
+				border-left: 1.3px solid #fff
+				transition: all .6s
+
+		.konstruktor--step__comment_img
+			width: 100px
+			height: 100px
+			margin-bottom: 0
+			margin-right: 50px
+
+			img
+				width: 100px
+				height: 100px
+
+	&__content
+		width: 100%
+		font-size: 16px
+		padding-top: 40px
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		
+		p
+			text-indent: 20px
+			margin-bottom: 25px
+			
+
 
 
 
