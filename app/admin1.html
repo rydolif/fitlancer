@@ -47,14 +47,14 @@
 	</header>
 
 	<section class="exercises">
-		<div class="container">
+		<form class="container">
 
-			<form class="admin__btn exercises__btn">
+			<div class="admin__btn exercises__btn">
 				<a href="#" class="btn">Каталог анимаций</a>
 				<a href="#" class="btn">Загрузить анимацию</a>
-			</form>
+			</div>
 			
-			<form class="admin--download">
+			<div class="admin--download">
 				
 				<div class="admin--download__left">
 					<a href="#" class="admin--download__left_img">
@@ -71,14 +71,14 @@
 						<div class="admin--download__right_block">
 							<div class="block">
 								<div class="block__header">
-									<span></span>
+									<span class="arrow"></span>
 									<p>Группа мышц</p>
 								</div>
 								<div class="admin--download__right_list block__content">
-									<input type="radio" id="press" name="select" checked>
+									<input type="checkbox" id="press" name="select" checked>
 									<label for="press">Пресс</label>
 
-									<input type="radio" id="nogi" name="select">
+									<input type="checkbox" id="nogi" name="select">
 									<label for="nogi">Ноги</label>
 								</div>
 							</div>
@@ -95,23 +95,27 @@
 					<div class="admin--download__right_line">
 						<p class="admin--download__right_title">Название</p>
 						<p class="admin--download__right_block">
-							Lorem ipsum dolor 
+							<input type="text" placeholder="Название">
 						</p>
 					</div>
 
 					<div class="admin--download__right_line">
 						<p class="admin--download__right_title">Описание</p>
 						<p class="admin--download__right_block">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+							<textarea name="" id="" placeholder="Описание"></textarea>
 						</p>
+					</div>
+					<div class="admin--download__right_line admin--download__right_line--btn">
+						<span></span>
+						<button class="btn">Добавить</button>
 					</div>
 
 
 				</div>
 
-			</form>
+			</div>
 
-		</div>
+		</form>
 	</section>
 
 	<footer class="footer">

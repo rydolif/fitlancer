@@ -8,21 +8,39 @@
 		margin-bottom: 65px
 
 		input
-			width: 60%
-			border-radius: 25px
-			background-image: url(../img/search.png)
-			background-repeat: no-repeat
-			background-position: 95% center
+			width: 90%
+			border-bottom-left-radius: 25px
+			border-top-left-radius: 25px
 			padding: 0 25px
 			margin-bottom: 15px
+
+		button
+			width: 20%
+			border-bottom-right-radius: 25px
+			border-top-right-radius: 25px
+			background-color: #313131
+			border: none
+			height: 50px
+			background-image: url(../img/search.png)
+			background-repeat: no-repeat
+			background-position: center
+
+			&:hover,
+			&:focus
+				background-color: $accent
 
 		a
 			margin-right: 25px
 			padding: 0 40px
 			margin-bottom: 10px
 
+		p
+			width: 42%
+			display: flex
+			justify-content: center
+
 		div
-			width: 70%
+			width: 55%
 			display: flex
 			justify-content: center
 

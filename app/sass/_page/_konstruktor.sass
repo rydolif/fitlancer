@@ -1,7 +1,149 @@
+	
+
+.block
+	background-color: #000
+	border-radius: 20px
+	padding: 15px 100px 15px 40px
+	margin-bottom: 15px
+
+	&:last-child
+		margin-bottom: 0
+
+	&--active
+		.block__header
+			.arrow
+				border-color: $accent
+				transform: translate(0, -50%) rotate(180deg)
+
+				&::before
+					border-color: $accent
+
+	a
+		color: $text
+
+		&:hover,
+		&:focus
+			color: $accent
+
+	ol, ul
+		margin-bottom: 25px
+		padding-left: 20px
+
+	p
+		align-items: center
+		margin-right: 25px
+
+	&__header
+		position: relative
+		display: flex
+		align-items: center
+		width: 100%
+		position: relative
+		font-size: 18px
+		line-height: 1
+		cursor: pointer
+
+		.arrow
+			position: absolute
+			right: 0
+			top: 50%
+			transform: translate(0, -50%)
+			display: block
+			width: 30px !important
+			height: 30px !important
+			border: 2px solid #fff
+			border-radius: 50%
+			transition: all .6s
+
+			&::before
+				content: ''
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -70%) rotate(225deg)
+				width: 8px
+				height: 8px
+				border-top: 1.3px solid #fff
+				border-left: 1.3px solid #fff
+				transition: all .6s
+
+		.konstruktor--step__comment_img
+			width: 100px
+			height: 100px
+			margin-bottom: 0
+			margin-right: 50px
+
+			img
+				width: 100px
+				height: 100px
+
+	&__content
+		width: 100%
+		font-size: 16px
+		padding-top: 40px
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		
+		p
+			text-indent: 20px
+			margin-bottom: 25px
+			
+
+
+
 .konstruktor
 
 	&__container
 		max-width: 930px
+
+	&__block
+		width: auto !important
+		min-width: 100px
+		padding: 15px 25px !important
+		position: relative
+		margin-bottom: 0 !important
+		margin-right: 10px
+		
+		.block__header
+			font-size: 18px
+			color: #fff
+			text-align: center !important
+			width: 100%
+			display: block
+			margin-bottom: 0 !important
+			white-space: nowrap
+
+		p
+			margin: 0 !important
+
+			div
+				display: inline-block
+		span
+			width: 100% !important
+
+		.block__content
+			padding-top: 0
+			position: absolute
+			top: 100%
+			left: 0
+			right: 0
+			background-color: #000
+			border-radius: 20px
+			text-align: center
+			z-index: 1
+
+
+		label
+			width: 90%
+			margin: 0 auto !important
+			padding: 10px 20px
+			border-radius: 20px
+			margin-bottom: 5px
+
+			&:last-child
+				margin-bottom: 0
+
 
 	&__title
 		display: flex
@@ -135,6 +277,24 @@
 	&__program
 		margin-bottom: 70px
 
+		input
+			max-width: 310px
+			background-color: #000
+			border-radius: 20px
+			color: #fff
+
+			&::placeholder
+				color: #fff
+
+
+		b
+			display: flex
+			flex-wrap: wrap
+			max-width: 60%
+
+		.block
+			margin-bottom: 5px !important
+
 		p
 			display: flex
 			flex-wrap: wrap
@@ -154,32 +314,34 @@
 			&:last-child
 				margin-right: 0
 
+
 		label
-			position: absolute
-			bottom: 100%
-			left: 50%
-			transform: translate(-50%, 0)
-			color: $text
-			white-space: nowrap
-
-		input
-			background: #000
-			outline: none
-			border: none
-			height: 50px
-			width: 110px
-			color: $text
-			padding: 0 35px
-			text-align: center
+			position: relative
+			padding-left: 25px
+			cursor: pointer
+			margin-bottom: 0
+			margin-right: 0
 			font-size: 16px
-			font-family: $fonts
-			border-radius: 30px
-			font-weight: 700
+			color: $text
+			line-height: 1
+			transition: all .6s
 
-			&::placeholder
-				color: $text
-				font-weight: 700
-		
+			&:hover,
+			&:focus
+				color: $accent
+
+		input[type="checkbox"]
+			display: none
+
+		input[type="checkbox"]:checked + label
+			background-color: #363636
+
+		input[type="radio"]
+			display: none
+
+		input[type="radio"]:checked + label
+			background-color: #363636
+
 		&_btn
 			display: flex
 			justify-content: flex-end
@@ -404,100 +566,4 @@
 				justify-content: flex-end
 				width: 100%
 				margin-top: 50px
-
-	
-
-.block
-	background-color: #000
-	border-radius: 20px
-	padding: 15px 100px 15px 40px
-	margin-bottom: 15px
-
-	&:last-child
-		margin-bottom: 0
-
-	&--active
-		.block__header
-			.arrow
-				border-color: $accent
-				transform: translate(0, -50%) rotate(180deg)
-
-				&::before
-					border-color: $accent
-
-	a
-		color: $text
-
-		&:hover,
-		&:focus
-			color: $accent
-
-	ol, ul
-		margin-bottom: 25px
-		padding-left: 20px
-
-	p
-		align-items: center
-		margin-right: 25px
-
-	&__header
-		position: relative
-		display: flex
-		align-items: center
-		width: 100%
-		position: relative
-		font-size: 18px
-		line-height: 1
-		cursor: pointer
-
-		.arrow
-			position: absolute
-			right: 0
-			top: 50%
-			transform: translate(0, -50%)
-			display: block
-			width: 30px !important
-			height: 30px !important
-			border: 2px solid #fff
-			border-radius: 50%
-			transition: all .6s
-
-			&::before
-				content: ''
-				position: absolute
-				left: 50%
-				top: 50%
-				transform: translate(-50%, -70%) rotate(225deg)
-				width: 8px
-				height: 8px
-				border-top: 1.3px solid #fff
-				border-left: 1.3px solid #fff
-				transition: all .6s
-
-		.konstruktor--step__comment_img
-			width: 100px
-			height: 100px
-			margin-bottom: 0
-			margin-right: 50px
-
-			img
-				width: 100px
-				height: 100px
-
-	&__content
-		width: 100%
-		font-size: 16px
-		padding-top: 40px
-		display: flex
-		justify-content: space-between
-		align-items: flex-start
-		
-		p
-			text-indent: 20px
-			margin-bottom: 25px
-			
-
-
-
-
 

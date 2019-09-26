@@ -7,6 +7,18 @@
 		justify-content: space-between
 		flex-wrap: wrap
 
+		.block
+			padding-right: 20px
+
+
+		input, textarea
+			background-color: #010101
+			color: #fff
+			border-radius: 10px
+
+			&::placeholder
+				color: #fff
+
 		label
 			position: relative
 			padding-left: 25px
@@ -41,6 +53,15 @@
 			&:hover,
 			&:focus
 				color: $accent
+
+		input[type="checkbox"]
+			display: none
+
+		input[type="checkbox"]:checked + label::after
+			transform: scale(1)
+
+		input[type="checkbox"] + label::after
+			transform: scale(0)
 
 		input[type="radio"]
 			display: none
@@ -93,10 +114,14 @@
 			&_title
 				width: 18%
 				color: #777b7b
+				line-height: 50px
 
 			&_line
 				display: flex
 				margin-bottom: 50px
+
+				&--btn
+					justify-content: flex-end
 
 			&_block
 				width: 100%
