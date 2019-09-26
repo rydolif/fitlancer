@@ -141,30 +141,57 @@
 			<form class="konstruktor--step__form">
 				<div class="konstruktor--step__form_header">
 					<h3>Добавить</h3>
-					<a href="#" class="btn">Упражнение из каталога</a>
-					<a href="#" class="btn">Свое упражнение </a>
+					<a href="#tabs-one" class="btn">Упражнение из каталога</a>
+					<a href="#tabs-two" class="btn">Свое упражнение </a>
 				</div>
-				<div class="konstruktor--step__form_left">
-					<div class="konstruktor--step__form_img"><img src="img/admin--download.png" alt=""></div>
-					<a href="#" class="btn">Выбрать упражнение</a>
+				<div  id="tabs-one" class="tabs__wrap">
+					<div class="konstruktor--step__form_left">
+						<div class="konstruktor--step__form_img"><img src="img/admin--download.png" alt=""></div>
+						<a href="#" class="btn program_open">Выбрать упражнение</a>
+					</div>
+					<div class="konstruktor--step__form_right">
+						<p>
+							<label for="">Название упражнения</label>
+							<input type="text" placeholder="">
+						</p>
+						<p>
+							<label for="">Количество подходов/Время выполнения</label>
+							<input type="text" placeholder="">
+						</p>
+						<p>
+							<label for="">Комментарий</label>
+							<textarea name="" id=""></textarea>
+						</p>
+					</div>
+					<div class="konstruktor--step__form_btn">
+						<button class="btn">Добавить</button>
+					</div>
 				</div>
-				<div class="konstruktor--step__form_right">
-					<p>
-						<label for="">Название упражнения</label>
-						<input type="text" placeholder="">
-					</p>
-					<p>
-						<label for="">Количество подходов/Время выполнения</label>
-						<input type="text" placeholder="">
-					</p>
-					<p>
-						<label for="">Комментарий</label>
-						<textarea name="" id=""></textarea>
-					</p>
+				<div  id="tabs-two" class="tabs__wrap">
+					<div class="konstruktor--step__form_left">
+						<div class="konstruktor--step__form_img"><img src="img/admin--download.png" alt=""></div>
+						<a href="#" class="btn">Вибрать</a>
+						<a href="#" class="btn">Сохранить</a>
+					</div>
+					<div class="konstruktor--step__form_right">
+						<p>
+							<label for="">Название упражнения</label>
+							<input type="text" placeholder="">
+						</p>
+						<p>
+							<label for="">Количество подходов/Время выполнения</label>
+							<input type="text" placeholder="">
+						</p>
+						<p>
+							<label for="">Комментарий</label>
+							<textarea name="" id=""></textarea>
+						</p>
+					</div>
+					<div class="konstruktor--step__form_btn">
+						<button class="btn">Добавить</button>
+					</div>
 				</div>
-				<div class="konstruktor--step__form_btn">
-					<button class="btn">Добавить</button>
-				</div>
+
 			</form>
 			
 		</div>
@@ -240,6 +267,101 @@
 			</form>
 
 		</div>
+
+		<div class="modal--program modal" id="program">
+			<button class="close program_close" type="button">
+				<span></span>
+				<span></span>
+			</button>
+
+			<div class="exercises__btn">
+				<input type="text" placeholder="Что Вы ищите?">
+				<button></button>
+			</div>
+
+			<div class="modal--program__btn">
+				<p>Группа мышц</p>
+				<a href="#" class="btn">Дельты</a>
+				<a href="#" class="btn">Бицепс</a>
+				<a href="#" class="btn">Трицепс</a>
+				<a href="#" class="btn">Грудные мышци</a>
+				<a href="#" class="btn">Пресс</a>
+				<a href="#" class="btn">Спина</a>
+				<a href="#" class="btn">Ягодицы</a>
+				<a href="#" class="btn">Ноги</a>
+				<a href="#" class="btn">Разное</a>
+				<a href="#" class="btn">Стретчинг</a>
+			</div>
+
+			<div class="admin--list">
+				
+				<div class="admin--list__item">
+					<a href="#" class="gif_open">
+						<span></span>
+						<img src="img/admin--list1.jpg" alt="">
+					</a>
+					<p>Название упражнения</p>
+				</div>
+				
+				<div class="admin--list__item">
+					<a href="#" class="gif_open">
+						<span></span>
+						<img src="img/admin--list2.jpg" alt="">
+					</a>
+					<p>Название упражнения</p>
+				</div>
+				
+				<div class="admin--list__item">
+					<a href="#" class="gif_open">
+						<span></span>
+						<img src="img/admin--list3.jpg" alt="">
+					</a>
+					<p>Название упражнения</p>
+				</div>
+				
+				<div class="admin--list__item">
+					<a href="#" class="gif_open">
+						<span></span>
+						<img src="img/admin--list4.jpg" alt="">
+					</a>
+					<p>Название упражнения</p>
+				</div>
+				
+				<div class="admin--list__item">
+					<a href="#" class="gif_open">
+						<span></span>
+						<img src="img/admin--list5.jpg" alt="">
+					</a>
+					<p>Название упражнения</p>
+				</div>
+				
+				<div class="admin--list__item">
+					<a href="#" class="gif_open">
+						<span></span>
+						<img src="img/admin--list6.jpg" alt="">
+					</a>
+					<p>Название упражнения</p>
+				</div>
+
+				<div class="admin--list__item">
+					<a href="#" class="gif_open">
+						<span></span>
+						<img src="img/admin--list7.jpg" alt="">
+					</a>
+					<p>Название упражнения</p>
+				</div>
+
+				<div class="admin--list__item">
+					<a href="#" class="gif_open">
+						<span></span>
+						<img src="img/admin--list8.jpg" alt="">
+					</a>
+					<p>Название упражнения</p>
+				</div>
+
+			</div>
+		</div>
+
 		<div class="modal--gif modal" id="gif">
 			<button class="close gif_close" type="button">
 				<span></span>

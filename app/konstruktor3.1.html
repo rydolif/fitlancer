@@ -53,15 +53,25 @@
 					<h2>Первая неделя</h2>
 					<a href="#"><span></span>назад</a>
 				</div>
-				<a href="#" class="btn">Добавить день недели</a>
+				<a href="#" class="btn date_open">Добавить день недели</a>
 			</div>
 
 			<div class="konstruktor--step__title">
 				<h3>Понедельник</h3>
 				<p>Выбрать шаблон:</p>
-				<select>
-					<option value="Нет шаблонов">Нет шаблонов</option>	
-				</select>
+				<div class="block block--select">
+					<div class="block__header">
+						<span class="arrow"></span>
+						<p>Группа мышц</p>
+					</div>
+					<div class="admin--download__right_list block__content">
+						<input type="checkbox" id="press" name="select" checked>
+						<label for="press">Пресс</label>
+
+						<input type="checkbox" id="nogi" name="select">
+						<label for="nogi">Ноги</label>
+					</div>
+				</div>
 			</div>
 
 			<div class="konstruktor--step__comment">
@@ -210,8 +220,38 @@
 					<button class="btn">Войти</button>
 				</div>
 			</form>
-
 		</div>
+
+		<div class="modal" id="date">
+			<button class="close date_close" type="button">
+				<span></span>
+				<span></span>
+			</button>
+
+			<div class="modal__header login__header">
+				<h3>Выберите день недели</h3>
+			</div>
+
+			<form class="login__form">
+				<div class="block block--select">
+					<div class="block__header">
+						<span class="arrow"></span>
+						<p>День недели</p>
+					</div>
+					<div class="admin--download__right_list block__content">
+						<input type="checkbox" id="press11" name="select" checked>
+						<label for="press11">Понедельник</label>
+
+						<input type="checkbox" id="nogi11" name="select">
+						<label for="nogi11">Вторник</label>
+					</div>
+				</div>
+				<div class="login__form_btn">
+					<button class="btn">Добавить</button>
+				</div>
+			</form>
+		</div>
+
 		<div class="modal--gif modal" id="gif">
 			<button class="close gif_close" type="button">
 				<span></span>

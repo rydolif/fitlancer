@@ -9,6 +9,43 @@
 	&:last-child
 		margin-bottom: 0
 
+
+	&--select
+		position: relative
+		padding-right: 20px
+
+		input[type="checkbox"]
+			display: none
+
+		input[type="checkbox"]:checked + label
+			background-color: #363636
+
+		input[type="radio"]
+			display: none
+
+		input[type="radio"]:checked + label
+			background-color: #363636
+
+		.block
+			&__header
+				padding-right: 50px
+
+			&__content
+				position: absolute
+				left: 0
+				top: 100%
+				right: 0
+				z-index: 1
+				background-color: #000
+				border-radius: 20px
+				padding-top: 10px
+
+				label
+					margin: 0 auto 5px
+					width: 90%
+					padding: 10px
+					border-radius: 20px
+
 	&--active
 		.block__header
 			.arrow
@@ -391,12 +428,11 @@
 				&:last-child
 					margin-bottom: 0
 
-
 				p
 					display: flex
 					justify-content: space-between
 					font-size: 16px
-					margin-bottom: 30px
+					margin-bottom: 14px
 					font-weight: 300
 
 					&:last-child
@@ -499,6 +535,12 @@
 			border-radius: 25px
 			padding: 50px
 
+			.tabs__wrap
+				display: flex
+				justify-content: space-between
+				flex-wrap: wrap
+				width: 100%
+
 			.btn
 				padding: 0 15px
 
@@ -522,9 +564,13 @@
 			&_left
 				width: 20%
 
+				.btn
+					width: 100%
+					margin-bottom: 10px
+
 			&_img
 				position: relative
-				width: 230px
+				width: 100%
 				height: 230px
 				background: #343434
 				margin-bottom: 30px

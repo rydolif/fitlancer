@@ -28,5 +28,19 @@ $(function() {
 //-------------------------------попандер---------------------------------------
   $('.modal').popup({transition: 'all 0.6s'});
 
+
+//---------------------------js-----------------------
+  $('.tabs__wrap').hide();
+  $('.tabs__wrap:first').show();
+  $('.konstruktor--step__form_header a:first').addClass('btn--active');
+   $('.konstruktor--step__form_header a').click(function(event){
+    event.preventDefault();
+    $('.konstruktor--step__form_header a').removeClass('btn--active');
+    $(this).addClass('btn--active');
+    $('.tabs__wrap').hide();
+     var selectTab = $(this).attr('href');
+    $(selectTab).fadeIn();
+  });
+
   
 });
