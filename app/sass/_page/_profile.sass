@@ -23,7 +23,7 @@
 					font-weight: 700
 					font-size: 16px
 
-				div
+				&--div
 					position: absolute
 					bottom: 0
 					right: 0
@@ -52,9 +52,9 @@
 					&:last-child
 						margin-bottom: 0
 
-			img
-				width: 100%
-				border-radius: 30px
+				&--img
+					width: 100%
+					border-radius: 30px
 
 
 		&__right
@@ -148,7 +148,6 @@
 
 	
 	&--program
-
 		&__header
 			padding-left: 0
 	
@@ -198,7 +197,6 @@
 	
 
 	&--trainer
-
 		&__textarea
 			height: 160px
 			margin-bottom: 40px
@@ -252,6 +250,22 @@
 				justify-content: space-between
 				align-items: center
 				width: 93%
+
+				&::before
+					content: ''
+					position: absolute
+					left: 0
+					top: 0
+					width: 0
+					background-color: $accent
+					height: 100%
+					transition: all .6s
+
+				&:hover,
+				&:focus
+					&::before
+						width: 5px
+
 
 				span,
 				b
@@ -316,14 +330,15 @@
 						margin-right: 5px
 			
 			&_content
-				// position: relative
-				// padding: 30px
 				max-height: 460px
 				overflow: auto
 				margin-left: 30px
 				margin-right: 15px
 				margin-top: 30px
 				width: 94%
+
+				.jspPane
+					padding-top: 20px !important
 
 			&_item
 				position: relative
@@ -370,7 +385,7 @@
 		
 			.link
 				position: absolute
-				bottom: -10px
+				top: 0
 				left: 50%
 				transform: translate(-50%, 0)
 				background-color: #242424

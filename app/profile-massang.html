@@ -62,78 +62,79 @@
 					<div class="profile--massag__user_header">
 						<p><b>Все сообщения</b></p>
 					</div>
-					<div class="profile--massag__user_list chat">
-						<div class="profile--massag__user_item profile--massag__user_item--active profile--massag__user_item--online">
+					<div class="profile--massag__user_list user">
+						<a href="#" class="profile--massag__user_item profile--massag__user_item--online">
 							<img src="img/mimi.jpg" alt="">
 							<p>
 								<b>Иван Иванов</b>
 								<span>Lorem ipsum dolor sai amet</span>
 							</p>
 							<time>12:30</time>
-						</div>
-						<div class="profile--massag__user_item profile--massag__user_item--online">
+						</a>
+						<a href="#" class="profile--massag__user_item profile--massag__user_item--online">
 							<img src="img/mimi.jpg" alt="">
 							<p>
 								<b>Иван Иванов</b>
 								<span>Lorem ipsum dolor sai amet</span>
 							</p>
 							<time>04/05/19</time>
-						</div>
-						<div class="profile--massag__user_item">
+						</a>
+						<a href="#" class="profile--massag__user_item">
 							<img src="img/mimi.jpg" alt="">
 							<p>
 								<b>Иван Иванов</b>
 								<span>Lorem ipsum dolor sai amet</span>
 							</p>
 							<time>12:30</time>
-						</div><div class="profile--massag__user_item profile--massag__user_item--active profile--massag__user_item--online">
+						</a>
+						<a href="#" class="profile--massag__user_item profile--massag__user_item--online">
 							<img src="img/mimi.jpg" alt="">
 							<p>
 								<b>Иван Иванов</b>
 								<span>Lorem ipsum dolor sai amet</span>
 							</p>
 							<time>12:30</time>
-						</div>
-						<div class="profile--massag__user_item profile--massag__user_item--online">
+						</a>
+						<a href="#" class="profile--massag__user_item profile--massag__user_item--online">
 							<img src="img/mimi.jpg" alt="">
 							<p>
 								<b>Иван Иванов</b>
 								<span>Lorem ipsum dolor sai amet</span>
 							</p>
 							<time>04/05/19</time>
-						</div>
-						<div class="profile--massag__user_item">
+						</a>
+						<a href="#" class="profile--massag__user_item">
 							<img src="img/mimi.jpg" alt="">
 							<p>
 								<b>Иван Иванов</b>
 								<span>Lorem ipsum dolor sai amet</span>
 							</p>
 							<time>12:30</time>
-						</div>
-						<div class="profile--massag__user_item profile--massag__user_item--online">
+						</a>
+						<a href="#" class="profile--massag__user_item profile--massag__user_item--online">
 							<img src="img/mimi.jpg" alt="">
 							<p>
 								<b>Иван Иванов</b>
 								<span>Lorem ipsum dolor sai amet</span>
 							</p>
 							<time>04/05/19</time>
-						</div>
-						<div class="profile--massag__user_item">
+						</a>
+						<a href="#" class="profile--massag__user_item">
 							<img src="img/mimi.jpg" alt="">
 							<p>
 								<b>Иван Иванов</b>
 								<span>Lorem ipsum dolor sai amet</span>
 							</p>
 							<time>12:30</time>
-						</div>
-						<div class="profile--massag__user_item">
+						</a>
+						<a href="#" class="profile--massag__user_item">
 							<img src="img/mimi.jpg" alt="">
 							<p>
 								<b>Иван Иванов</b>
 								<span>Lorem ipsum dolor sai amet</span>
 							</p>
 							<time>12:30</time>
-						</div>
+						</a>
 					</div>
 				</div>
 
@@ -144,9 +145,9 @@
 							<b>Иван Иванов</b>
 							<span><span></span>Online</span>
 						</p>
-						<a href="#" class="link">Предыдущие сообщения</a>
 					</div>
 					<div class="profile--massag__chat_content chat">
+						<a href="#" class="link">Предыдущие сообщения</a>
 
 						<div class="profile--massag__chat_item">
 							<p>
@@ -319,10 +320,17 @@
 	<script src="js/scripts.min.js"></script>
 	<script>
 		$(function() {
-   			$('.chat').jScrollPane();
+			$('.user').jScrollPane();
+			$('.chat').jScrollPane().each(function(){
+				$(this).data('jsp').scrollToBottom();
+			});
    		});
+
    		$(window).resize(function(event) {
-			$('.chat').jScrollPane();
+			$('.user').jScrollPane();
+			$('.chat').jScrollPane().each(function(){
+				$(this).data('jsp').scrollToBottom();
+			});
 		});
 	</script>
 

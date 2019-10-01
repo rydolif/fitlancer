@@ -41,6 +41,5 @@ $(function() {
      var selectTab = $(this).attr('href');
     $(selectTab).fadeIn();
   });
-
   
 });

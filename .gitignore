@@ -2,6 +2,7 @@
 /dist/
 /libs/
 /.git/
+/.idea/
 /psd/
 /js/common.js/
 /app/css/

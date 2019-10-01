@@ -14,7 +14,10 @@
 		margin-bottom: 30px
 
 		button
-			width: 10%
+			width: 7%
+
+		input
+			width: 93%
 
 	.block--select
 		background-color: #363636
@@ -58,6 +61,15 @@
 			flex-wrap: wrap
 			align-items: center
 			margin-bottom: 70px
+
+			ul
+				display: flex
+				flex-wrap: wrap
+				align-items: center
+
+			li
+				margin-right: 10px
+				margin-bottom: 10px
 			
 			p
 				font-family: $title
@@ -67,13 +79,15 @@
 				line-height: 1
 
 			a
-				margin-bottom: 10px
-				margin-right: 10px
 				padding: 0 15px
 				font-weight: 400
 
 				&:last-child
 					margin-right: 0
+
+			.active
+				background-color: $accent
+				border-color: $accent
 	
 	&--gif
 		max-width: 600px
