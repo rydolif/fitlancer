@@ -3,16 +3,24 @@
 
 	&__btn
 		display: flex
-		flex-wrap: wrap
 		justify-content: space-around
 		margin-bottom: 65px
 
-		input
+		input, textarea
 			width: 90%
 			border-bottom-left-radius: 25px
 			border-top-left-radius: 25px
 			padding: 0 25px
 			margin-bottom: 15px
+
+		textarea
+			min-height: 50px
+			height: 50px
+			padding: 10px 20px
+			line-height: 1.5
+
+			&::placeholder
+				line-height: 30px
 
 		button
 			width: 20%
@@ -28,6 +36,14 @@
 			&:hover,
 			&:focus
 				background-color: $accent
+
+
+		.chat--button
+			background-image: url(../img/masseg.png)
+
+			&:hover,
+			&:focus
+				background-color: #fff !important
 
 		a
 			margin-right: 25px
