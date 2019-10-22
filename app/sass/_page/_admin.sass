@@ -200,24 +200,17 @@
 					opacity: 0
 					transition: all .6s
 
-					&::before,
-					&::after
+					&::before
 						content: ''
 						display: block
 						position: absolute
 						left: 50%
 						top: 50%
-						transform: translate(-50%, -50%)
-						background-color: $text
-
-					&::before
-						width: 3px
-						height: 16px
-
-					&::after
-						width: 16px
-						height: 3px
-
+						transform: translate(-20%, -50%)
+						border-bottom: 10px solid transparent
+						border-left: 20px solid #fff
+						border-right: 20px solid transparent
+						border-top: 10px solid transparent
 
 			img
 				margin-bottom: 20px
