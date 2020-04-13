@@ -213,8 +213,9 @@
 	.btn
 		padding: 0 35px
 	
-	.index h1
-		line-height: 1.4
+	.index
+		h1
+			line-height: 1.4
 
 	.footer
 		&__col
@@ -229,8 +230,13 @@
 
 
 @media only screen and (max-width : 992px)
-	.index__item
-		width: auto
+	.index
+		&__item
+			width: auto
+
+		&__form
+			p
+				width: 100% !important
 
 	.modal
 		&--program

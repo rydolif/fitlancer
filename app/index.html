@@ -12,8 +12,10 @@
 
 	<link rel="stylesheet" href="css/main.min.css?v=1">
 
-	<link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700&display=swap&subset=cyrillic"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900&display=swap"
+		rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Oswald:600&display=swap&subset=cyrillic" rel="stylesheet">
 
 </head>
@@ -55,6 +57,13 @@
 
 				<h1><b>твой</b><br>персональный<br><b>тренер</b><br>online</h1>
 
+				<form class="index__form exercises__btn">
+					<p>
+						<input type="text" placeholder="Что Вы ищите?">
+						<button></button>
+					</p>
+				</form>
+
 				<div class="index__list">
 
 					<a href="#" class="index__item">
@@ -80,7 +89,7 @@
 
 			</div>
 		</section>
-	
+
 		<footer class="footer">
 			<div class="footer__container container">
 
@@ -126,36 +135,37 @@
 	</main>
 
 	<!-- modal -->
-		<div class="modal" id="order">
-			<button class="close order_close" type="button">
-				<span></span>
-				<span></span>
-			</button>
+	<div class="modal" id="order">
+		<button class="close order_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
 
-			<div class="modal__header login__header">
-				<h3>Обратная связь</h3>
-			</div>
-
-			<form class="login__form">
-				<div class="login__form_line">
-					<input type="text" placeholder="Имя" required>
-				</div>
-				<div class="login__form_line">
-					<input type="email" placeholder="E-mail" required>
-				</div>
-				<div class="login__form_line">
-					<textarea name="" placeholder="Вопрос"></textarea>
-				</div>
-				<div class="login__form_btn">
-					<button class="btn">Войти</button>
-				</div>
-			</form>
-
+		<div class="modal__header login__header">
+			<h3>Обратная связь</h3>
 		</div>
+
+		<form class="login__form">
+			<div class="login__form_line">
+				<input type="text" placeholder="Имя" required>
+			</div>
+			<div class="login__form_line">
+				<input type="email" placeholder="E-mail" required>
+			</div>
+			<div class="login__form_line">
+				<textarea name="" placeholder="Вопрос"></textarea>
+			</div>
+			<div class="login__form_btn">
+				<button class="btn">Войти</button>
+			</div>
+		</form>
+
+	</div>
 	<!-- modal end-->
 
 	<script src="js/scripts.min.js"></script>
 
 
 </body>
+
 </html>
