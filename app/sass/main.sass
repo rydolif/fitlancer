@@ -171,7 +171,7 @@
 
 	&__form
 		justify-content: flex-end !important
-		margin-bottom: 20px !important
+		margin-bottom: 30px !important
 
 		p
 			width: 74% !important
@@ -179,10 +179,18 @@
 		input
 			border-color: #ffffff
 			width: 85% !important
-		
+
+			&:hover,
+			&:focus
+				border-color: $accent
+
 		button
-			background-color: $accent !important
+			border: 1px solid #fff !important
 			width: 15% !important
+
+			&:hover,
+			&:focus
+				border-color: $accent !important
 
 
 .footer
@@ -357,6 +365,71 @@
 
 
 .reviews
+
+	&__comment
+		align-items: center
+
+	&__star
+		display: flex
+		justify-content: flex-start
+		// justify-content: flex-end
+
+		img
+			width: 30px
+			margin-right: 3px !important
+
+			&:last-child
+				margin-right: 0 !important
+			
+		input
+			width: 25px !important
+			height: 25px !important
+
+.rating-area
+	overflow: hidden
+	min-width: 210px
+	width: 75%
+	display: flex
+	flex-direction: row-reverse
+	justify-content: flex-end
+
+.rating-area:not(:checked) > input
+	display: none
+
+.rating-area:not(:checked) > label
+	width: 42px
+	padding: 0
+	cursor: pointer
+	font-size: 50px
+	line-height: 50px
+	color: lightgrey
+	text-shadow: 1px 1px #bbb
+
+.rating-area:not(:checked) > label:before
+	// content: '★'
+
+.rating-area > input:checked ~ label
+	color: gold
+	text-shadow: 1px 1px #c60
+
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label
+	path, svg
+		fill: $accent !important
+
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label
+	
+	path, svg
+		fill: $accent !important
+
+.rate-area > label:active
+	position: relative
+
+
 
 @import "_page/trainers"
 @import "_page/exercises"
